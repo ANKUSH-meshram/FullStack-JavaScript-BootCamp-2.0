@@ -1,0 +1,41 @@
+/* Universal selector */
+*{
+    background-color: #4d4d4d;
+}
+/* individual selector */
+p{
+    background-color: rgba(134, 198, 190, 0.933);
+}
+li{
+    background-color: rgb(110, 107, 107);
+}
+/* class and id selector */
+.class{
+    background-color: #ef9323;
+    color: #fff;
+}
+#id{
+    color: rgb(209, 53, 32);
+    background-color: rgb(253, 249, 249);
+}
+/* and selector (chained) */
+li.bg-black.text-white{
+    background-color: #000;
+    color: #ef9323;
+}
+/* commbined selector */
+h1, h3{
+    color: #9da3e4;
+}
+/* inside an element */
+div ul li{
+    background-color: rgb(165, 188, 89);
+}
+/* direct child */
+div > li{
+    background-color: rgb(103, 61, 163);
+}
+/* sibling ~ or + */
+.sibling + p {
+    background-color: rgb(222, 170, 178);
+}
