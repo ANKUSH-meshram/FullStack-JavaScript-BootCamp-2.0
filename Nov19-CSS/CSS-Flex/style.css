@@ -1,0 +1,50 @@
+.container{
+    border: 2px solid black;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    /* todo: flex direction properties */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+    flex-direction: column;
+
+    /* todo: justify content properties */
+    /* justify-content: baseline;
+    justify-content: flex-end;
+    justify-content: flex-start;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly; */
+    justify-content: center;
+
+    /* todo: Align item properties */
+    /* align-items: baseline;
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: stretch; */
+    align-items: center;
+    
+    /* todo:flex wrap  */
+    /* flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse; */
+
+    /* todo: flex flow  */
+    /* flex-flow: row-reverse; */
+
+    /* todo: align content  */
+    /* align-content: center;
+    align-content: flex-end;
+    align-content: flex-start;
+    align-content: space-between;
+    align-content: space-around; */
+}
+.box-pos{
+    border: 2px solid blueviolet;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: antiquewhite;
+    margin: 5px;
+}
