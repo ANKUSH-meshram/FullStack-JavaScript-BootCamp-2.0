@@ -1,0 +1,23 @@
+.container{
+    height: 200px;
+    width: 300px;
+    border: 2px solid black;
+}
+.box-pos{
+    border: 2px solid rgb(43, 168, 154);
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    background-color: rgb(191, 203, 149);
+    /* position: sticky; */
+    /* top: 50px; */
+}
+
+#two{ 
+    border: 2px solid rgb(218, 71, 86);
+    background-color: rgb(88, 210, 114);
+    position: relative;
+    top: 40px; 
+    left: 40px;
+}
