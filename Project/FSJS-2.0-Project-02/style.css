@@ -1,0 +1,117 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+body{
+    background-image: url(./assets/bg.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #000;
+}
+.navbar img{
+    width: 80px;
+    display: inline-block;
+    margin-left: 50px;
+}
+.navbar img:hover{
+    width: 81px;
+}
+.navbar .line{
+    outline: 1px solid #fff;
+    margin: 0 20px 0 40px;
+}
+.navbar .grow-list{
+    margin-left: 10px;
+}
+.navbar .grow-list .list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+.navbar .grow-list .list li{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 0 25px;
+    padding-top: 5px;
+    font-family: Montserrat;
+    font-size: 12px;
+    text-align: center;
+}
+.navbar .grow-list .list li:hover{
+    font-size: 13px;
+    color: rgb(196, 190, 190);
+}
+.navbar .grow-list .list li span{
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0 0 2px;
+    color: #fff;
+}
+.navbar .button-small{
+    background-color: #ba0cc5;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: 11px;
+    color: #fff;
+    margin-left: 390px;
+    margin-right: 50px;
+    border: none;
+}
+.navbar .button-small:hover{
+    background-color: #fff;
+    color: #ba0cc5;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+}
+.hero h1{
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 70px;
+    text-align: center;
+    line-height: 80px;
+    margin-left: 2in;
+    margin-right: 2in;
+}
+.hero p{
+    color: #fff;
+    font-family: Poppins;
+    font-size: 25px;
+}
+.hero .button-large{
+    margin-top: 40px;
+    background-color: #ba0cc5;
+    width: 270px;
+    height: 50px;
+    border-radius: 8px;
+    font-family: Montserrat;
+    font-size: 23px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    margin-bottom: 350px;
+}
+.hero .button-large:hover{
+    background-color: #fff;
+    color: #ba0cc5;
+}
