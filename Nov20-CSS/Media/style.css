@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    background-color: #3f3f3f;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 10px;
+}
+.box{
+    border: 2px solid black;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background-color: rgb(228, 193, 77);
+}
+.para{
+    margin: 30px;
+}
+.para p {
+    font-size: 25px;
+    line-height: 30px;
+}
+
+@media (max-width: 376px){
+    body {
+        flex-direction: column;
+        background-color: #6A1B4D;
+    }
+    .container{
+        flex-direction: row;
+        gap: 10px;
+    }
+    .box{
+        width: 60px;
+        height: 60px;
+    }
+    .para{
+        margin: 15px;
+    }
+    .para p{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+    body {
+        flex-direction: column-reverse;
+        background-color: #03203C;
+    }
+    .container{
+        flex-direction: row;
+        margin: 10px;
+        justify-content: space-between;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+    }
+    .para{
+        margin: 15px;
+    }
+    .para p{
+        font-size: 25px;
+        color: rgb(129, 125, 125);
+        line-height: 35px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+    body {
+        flex-direction: row-reverse;
+        background-color: #FF6666;
+    }
+    .container{
+        flex-direction: col;
+        margin: 10px;
+        justify-content: space-between;
+    }
+    .box{
+        width: 60px;
+        height: 60px;
+        background-color: #35BDD0;
+    }
+    .para{
+        margin: 15px;
+    }
+    .para p{
+        font-size: 20px;
+        color: rgb(58, 57, 57);
+        line-height: 35px;
+    }
+}
