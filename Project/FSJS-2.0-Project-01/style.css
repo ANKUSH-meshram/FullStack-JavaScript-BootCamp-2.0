@@ -1,0 +1,106 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    width: fit-content;
+    font-family: 'Poppins', sans-serif;
+}
+/* Navbar */
+.container{
+    width: 90vh;
+    margin: 40px 60px;
+}
+.container section .navbar-container{
+    width: 100%;
+    display: flex;
+}
+.container section .navbar-container img{
+    width: 100px;
+}
+.container section .navbar-container .grow-list{
+    margin: 0px 50px;
+}
+.container section .navbar-container .grow-list .list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 5px;
+}
+.container section .navbar-container .grow-list .list .list-item {
+    font-family:  poppins;
+    font-size: 15px;
+    color: #888;
+    padding-right: 25px;
+}
+.container section .navbar-container .grow-list .list .list-item:hover{
+    color: #000;
+}
+.container section .navbar-container .button-group {
+    margin-left: 420px;
+}
+.container section .navbar-container .button-group .nav-button {
+    display: inline-block;
+    background-color: #5955b3;
+    color: #fff;
+    padding: 12px 18px;
+    width: 110px;
+    border-radius: 8px;
+    border: none;
+    font-family: Poppins;
+    font-size: 13px;
+    outline: none;
+}
+.container section .navbar-container .button-group .nav-button:hover{
+    transition: 0.5s ease-in-out;
+    color:  #5955b3;
+    font-weight: 600;
+    background-color: #fff;
+}
+
+/* Banner */
+.container section .banner-container {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+.container section .banner-container div h1 {
+    width: 400px;
+    margin-top: 100px;
+    font-size: 57px;
+    font-family: Poppins;
+    color: #3c2f60;
+    line-height: 70px;
+    font-weight: 600;
+}
+.container section .banner-container div h1 span {
+    color: #5955b3;
+}
+.container section .banner-container div .description {
+    margin-top: 20px;
+    font-family: Poppins;
+    font-size: 14px;
+    width: 350px;
+    color: #888;
+}
+
+.container section .banner-container div .nav-button {
+    margin-top: 50px;
+    display: inline-block;
+    background-color: #5955b3;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: none;
+    font-family: Poppins;
+    font-size: 13px;
+}
+.container section .banner-container div .nav-button:hover{
+    transition: 0.2s ease-in;
+    font-size: 13px;
+    box-shadow: 5px 3px 7px #3d3d3d;
+}
+
+.container section .banner-container div img {
+    justify-content: flex-end;
+    margin-left: 60px;
+    width: 760px;
+}
