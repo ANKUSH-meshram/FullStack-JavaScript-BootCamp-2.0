@@ -1,0 +1,15 @@
+body{
+    background-color: #3d3d3d;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+}
+.box{
+    /* border: 2px solid #000; */
+    margin: 5px;
+    width: 175px;
+    height: 90px;
+    background-color: rgb(216, 153, 76);
+    text-align: center;
+}
