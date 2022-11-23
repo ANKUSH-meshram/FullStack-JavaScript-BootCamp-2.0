@@ -158,23 +158,25 @@ body {
     border-color: 1px solid #333;
 }
 .container section .hero-container .hero-container-right div .button-email:hover{
-    background-color: #333;
+    transition: ease-in-out 0.5s;
+    background-color: #000000;
     color: #f3f3f3;
 }
 .container section .hero-container .hero-container-right div .button-join {
     width: 120px;
     height: 30px;
     border-radius: 8px;
-    background-color: #000;
-    color: #fff;
     font-family: Orbitron;
     font-size: 17px;
     font-weight: 500;
+    border-color: 1px solid #333;
+    color: #686767;
+    background-color: transparent;
 }
 .container section .hero-container .hero-container-right div .button-join:hover {
-    background-color: transparent;
-    color: #333;
-    border: 2px solid #333;
+    transition: ease-in-out 0.5s;
+    background-color: #000000;
+    color: #f3f3f3;
 }
 .container section .hero-container .hero-container-right .contact {
     margin-top: 80px;
