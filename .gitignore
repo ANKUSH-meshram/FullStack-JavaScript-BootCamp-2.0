@@ -2,3 +2,5 @@
 assets/**
 *.png
 *.img
+**/images
+images/**
