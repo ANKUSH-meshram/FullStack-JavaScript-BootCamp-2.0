@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code Clone </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="bg-[#2c2c32] m-0 p-0">
+    <p class="text-[#91BEB7] bg-gray-800 text-center text-[10px] tracking-[8px] ">Only for educational purposes</p>
+    <!-- Navbar -->
+    <nav class="z-10 sticky top-0 h-[8vh] pl-2 pr-3 py-1 md:pl-10 bg-[#2c2c32] md:flex md:items-center md:justify-between drop-shadow-md">
+        <div class="flex justify-between items-center">
+            <span class="flex cursor-pointer">
+                <img class="w-[6%] h-[50%] md:w-6 md:h-6 mx-2" src="./images/VS-logo.ico" alt="VS Code">
+                <a class="text-[#fff7eb] text-xl font-medium" href="index.html">Visual Studio Code</a>
+            </span>
+
+            <span class="text-3xl cursor-pointer  md:hidden block text-white hover:bg-[#0066b8] hover:rounded">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+        <ul class="text-[#a5a5a7] md:flex md:items-center z-[-1] md:z-auto md:static absolutee bg-[#2c2c32] w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-1 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class=" my-6 md:my-0 md:px-3">
+                <a href="#" class="text-xl hover:text-[#fff7eb] font-medium text-base duration-500">Docs</a>
+            </li>
+            <li class=" my-6 md:my-0 md:px-3">
+                <a href="#" class="text-xl hover:text-[#fff7eb] font-medium text-base duration-500">Updates</a>
+            </li>
+            <li class=" my-6 md:my-0 md:px-3">
+                <a href="#" class="text-xl hover:text-[#fff7eb] font-medium text-base duration-500">Blog</a>
+            </li>
+            <li class=" my-6 md:my-0 md:px-3">
+                <a href="#" class="text-xl hover:text-[#fff7eb] font-medium text-base duration-500">API</a>
+            </li>
+            <li class=" my-6 md:my-0 md:px-3">
+                <a href="#" class="text-xl hover:text-[#fff7eb] font-medium text-base duration-500">Extensions</a>
+            </li>
+            <li class=" my-6 md:my-0 md:px-3">
+                <a href="#" class="text-xl hover:text-[#fff7eb] font-medium text-base duration-500">FAQ</a>
+            </li>
+            <li class=" my-6 md:my-0 md:px-3">
+                <a href="#" class="text-xl hover:text-[#fff7eb] font-medium text-base duration-500">Learn</a>
+            </li>
+            <div class="md:flex">
+                <div class="flex bg-[#3d3d42] md:w-[50%] hover:bg-[#52525b] hover:border-1 hover:border-[#3d3d42]">
+                    <img class="w-6 h-7 rotate-90 my-3 mx-2 cursor-pointer" src="./images/search icon.png" alt="">
+                    <input class="text-[#ecf7e8] bg-transparent text-sm w-[80%] outline-none" type="search" placeholder="Search Docs">
+                </div>
+                <div class="flex md:w-[40%] bg-[#0066b8] pl-3 pr-5 cursor-pointer hover:bg-[#26619c]">
+                    <img class="w-6 h-6 my-3" src="./images/icons8-download-32.png" alt="">
+                    <button class="text-[#ecf7e8] font-medium">Download</button>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    
+    <main class="mt-10">
+        <!-- Section 1 Hero -->
+        <section class="flex flex-col items-center md:flex-row md:justify-between">
+            <div class="flex flex-col items-center md:w-[40%] md:mt-10">
+                <h1 class="text-[#fff7eb] text-5xl font-thin text-center ">Code editing.</h1>
+                <h1 class="text-5xl  text-center text-[#fff7eb] ">Redefined.</h1>
+                <p class="text-[#ababad] text-center my-3 text-base">Free. Built on open source. Runs everywhere.</p>
+                <div class="flex cur">
+                    <button class="bg-[#0066b8] px-10 py-2 hover:bg-[#26619c]">
+                        <h5 class="text-base font-medium text-[#fff7eb]">Download for Windows</h5>
+                        <p class="text-xs text-center font-light text-[#fff7eb]">Stable Build</p>
+                    </button>
+                    <button class="bg-[#0066b8] mx-0.5 px-2 hover:bg-[#26619c]">
+                        <img class="w-5" src="./images/icons8-down-24.png" alt="">
+                    </button>
+                </div>
+                <p class="text-sm font-extralight text-[#a5a5a7] mt-3 bg-[#25252b] py-1 px-7 rounded-lg "><a class="text-[#1d6ed4] hover:underline cursor-pointer " href="">Web</a>, <a class="text-[#1d6ed4] hover:underline cursor-pointer " href="">Insiders edition</a>, or <a class="text-[#1d6ed4] hover:underline cursor-pointer " href="">other platforms</a>
+                </p>
+                <div class="my-1">
+                    <p class="text-[#ababad] text-sm text-center font-light ">By using VS Code, you agree to its</p>
+                    <a class="text-[#1d6ed4] text-sm text-center font-light mx-3 hover:underline" href="">liscense and privacy statement.</a>
+                </div>
+            </div>
+            <div class="mt-6 w-[90%] md:w-[60%]">
+                <img class="drop-shadow-lg" src="./images/VS Snapshott.png" alt="">
+            </div>
+        </section>
+
+        <!-- section 2 features-->
+        <section class="bg-[#ffffff] grid grid-cols-2 px-3 mt-5 md:mt-[10%] md:flex md:justify-around md:px-10">
+            <div class="flex flex-col items-center hover:bg-[#9da2a7] cursor-pointer md:w-[20%]">
+                <img class="pt-5 w-[15%]" src="./images/intellisense.png" alt="">
+                <p class="pb-2 pt-2 text-xl text-[#656565] cursor-pointer">IntelliSense</p>
+            </div>
+            <div class="flex flex-col items-center hover:bg-[#9da2a7] cursor-pointer md:w-[20%]">
+                <img class="pt-5 w-[15%]" src="./images/run-and-debug.png" alt="">
+                <p class="pb-2 pt-2 text-xl text-[#656565] cursor-pointer">Run and Debug</p>
+            </div>
+            <div class="flex flex-col items-center hover:bg-[#9da2a7] cursor-pointer md:w-[20%]">
+                <img class="pt-5 w-[15%]" src="./images/git-icon.png" alt="">
+                <p class="pb-2 pt-2 text-xl text-[#656565] cursor-pointer">Built-in Git</p>
+            </div>
+            <div class="flex flex-col items-center hover:bg-[#9da2a7] cursor-pointer md:w-[20%]">
+                <img class="pt-5 w-[15%]" src="./images/extentions-icon.png" alt="">
+                <p class="pb-4 text-xl text-[#656565] cursor-pointer">Extensions</p>
+            </div>
+        </section>
+        
+        <!-- section 3 testimonial-->
+        <section class="px-20 py-[10%] md:py-[5%] bg-[#f5f5f5] flex flex-col md:flex-row justify-between">
+            <div class="flex px-6 py-3">
+                <img class="w-20 h-20 px-2 drop-shadow-lg" src="./images/User 1.png" alt="">
+                <div>
+                    <h3 class="text-[#030303] font-bold text-lg">User 1</h3>
+                    <p class="text-[#7c7c7c]">VS <a class="text-[#318bc7]" href="">@code</a> does so many things right. I'm constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
+                </div>
+            </div>
+            <div class="flex px-6 py-3">
+                <img class="w-20 h-20 px-2 drop-shadow-lg" src="./images/User 2.png" alt="">
+                <div>
+                    <h3 class="text-[#030303] font-bold text-lg">User 2</h3>
+                    <p class="text-[#7c7c7c]">VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                </div>
+            </div>
+            <div class="flex px-6 py-3">
+                <img class="w-20 h-20 px-2 drop-shadow-lg" src="./images/User 3.png" alt="">
+                <div>
+                    <h3 class="text-[#030303] font-bold text-lg">User 3</h3>
+                    <p class="text-[#7c7c7c]">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 4 Intellisense-->
+        <section class="flex flex-col md:flex-row px-10 pt-4 pb-10 md:justify-between md:items-center bg-[#fff]">
+            <div class="self-center w-[70%] md:w-[35%]">
+                <img src="./images/meet-intellisense.png" alt="">
+            </div>
+            <div class="md:pr-10 md:w-[60%]">
+                <p class="text-xl md:text-4xl font-extralight text-[#444444] pb-6">Meet IntelliSense.</p>
+                <p class="text-[#444] text-sm md:text-lg font-normal leading-8">Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.</p>
+            </div>
+        </section>
+
+        <!-- section 5 Debug-->
+        <section class="flex flex-col-reverse md:flex-row px-10 pb-10 md:justify-between md:items-center bg-[#f5f5f5]">
+            <div class="md:pr-10 md:-[60%]">
+                <p class="text-xl md:text-4xl font-extralight text-[#444444] pb-5 md:pb-10">Print statement debugging is a thing of the past.         </p>
+                <p class="text-[#444] text-sm md:text-xl font-normal leading-8">Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.</p>
+            </div>
+            <div class="self-center w-[80%] md:w-[35%] py-10">
+                <img src="./images/meet-debug.png" alt="">
+            </div>
+        </section>
+
+        <!-- section 6 Git-->
+        <section class="flex flex-col md:flex-row pb-10 px-10 md:justify-between md:items-center bg-[#fff]">
+            <div class="w-[70%] self-center md:w-[35%] py-10">
+                <img src="./images/meet-git.png" alt="">
+            </div>
+            <div class="md:pr-10 md:w-[60%]">
+                <p class="text-xl md:text-4xl font-extralight text-[#444444] pb-10">Git commands built-in.</p>
+                <p class="text-[#444] text-sm md:text-xl font-normal leading-8">Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted SCM service.</p>
+            </div>
+        </section>
+
+        <!-- section 7 customizable-->
+        <section class="flex flex-col-reverse md:flex-row px-10 pb-10 md:justify-between md:items-center bg-[#f5f5f5]"> 
+            <div class="md:pr-10 md:w-[60%]">
+                <p class="text-xl md:text-4xl font-extralight text-[#444444] pb-10">Extensible and customizable.</p>
+                <p class="text-[#444] text-sm md:text-xl font-normal leading-8">Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor. <a class="text-[#2f92d4] hover:underline" href="">Learn more about extensions.</a></p>
+            </div>
+            <div class="self-center w-[65%] md:w-[30%] pt-10 pb-5 md:py-20 hover:scale-105 cursor-pointer hover:transition-all hover:duration-700 hover:delay-100 hover:ease-in-out">
+                <img class="cursor-pointer " src="./images/customize.png" alt="">
+            </div>
+        </section>
+
+        <!-- section 8 deploy-->
+        <section class="flex flex-col md:flex-row px-10 pb-10 md:justify-between md:items-center bg-[#fff]">
+            <div class="self-center w-[70%] md:w-[35%] py-10">
+                <img src="./images/deploy.png" alt="">
+            </div>
+            <div class="md:pr-10 md:w-[60%]">
+                <p class="text-xl md:text-4xl font-extralight text-[#444444] pb-10">Deploy with confidence and ease</p>
+                <p class="text-[#444] text-sm md:text-xl font-normal leading-10">With <a class="text-[#2f92d4] hover:underline" href="">Microsoft Azure</a> you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites, store and query relational and document based data, and scale with serverless computing, all with ease, <a class="text-[#2f92d4] hover:underline" href="">all from within VS Code.</a>
+            </div>
+        </section>
+
+        <!--section 9 VS Code for -->
+        <section class="bg-[#f5f5f5] flex flex-col items-center py-10">
+            <h5 class="text-[#444448] text-xl md:text-5xl font-thin py-5">VS Code for</h5>
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-x-32 md:gap-x-10 gap-y-4 py-5">
+                <div class="flex px-2">
+                    <img class="w-4 md:w-6 mx-2" src="./images/JS.png" alt="">
+                    <p class="text-base md:text-lg text-[#444448] ">JavaScript</p>
+                </div>
+                <div class="flex px-2">
+                    <img class="w-4 md:w-6 mx-2" src="./images/python.png" alt="">
+                    <p class="text-base md:text-lg text-[#444448]">Python</p>
+                </div>
+                <div class="flex px-2">
+                    <img class="w-4 md:w-6 mx-2" src="./images/java.png" alt="">
+                    <p class="text-base md:text-lg text-[#444448] ">Java</p>
+                </div>
+                <div class="flex px-2">
+                    <img class="w-4 md:w-6 mx-2" src="./images/markdown.png" alt="">
+                    <p class="text-base md:text-lg text-[#444448] ">Markdown</p>
+                </div>
+                <div class="flex px-2">
+                    <img class="w-4 md:w-6 mx-2" src="./images/typeScript.png" alt="">
+                    <p class="text-base md:text-lg text-[#444448] ">TypeScript</p>
+                </div>
+                <div class="flex px-2">
+                    <img class="w-4 md:w-6 mx-2" src="./images/C++.png" alt="">
+                    <p class="text-base md:text-lg text-[#444448] ">C/C++</p>
+                </div>
+                <div class="flex px-2">
+                    <img class="w-4 md:w-6 mx-2" src="./images/json.png" alt="">
+                    <p class="text-base md:text-lg text-[#444448] ">JSON</p>
+                </div>
+                <div class="flex px-2">
+                    <img class="w-4 md:w-6 mx-2" src="./images/powershell.png" alt="">
+                    <p class="text-base md:text-lg text-[#444448] ">Powershell</p>
+                </div>
+                <div class="flex px-2">
+                    <img class="w-4 md:w-6 mx-2" src="./images/html.png" alt="">
+                    <p class="text-base md:text-lg text-[#444448] ">HTML/CSS</p>
+                </div>
+                <div class="flex px-2">
+                    <img class="w-4 md:w-6 mx-2" src="./images/Csharp.png" alt="">
+                    <p class="text-base md:text-lg text-[#444448] ">C#</p>
+                </div>
+                <div class="flex px-2">
+                    <img class="w-4 md:w-6 mx-2" src="./images/php.png" alt="">
+                    <p class="text-base md:text-lg text-[#444448] ">PHP</p>
+                </div>
+                <div class="flex px-2">
+                    <img class="w-4 md:w-6 mx-2" src="./images/YAML.png" alt="">
+                    <p class="text-base md:text-lg text-[#444448] ">YAML</p>
+                </div>
+            </div>
+            <a class="text-basetext-base md: md:text-lg text-[#127fca] hover:underline mb-14" href="">and many more languages on the Marketplace...</a>
+            <button class="text-white text-lg font-semibold bg-[#0066b8] py-4 px-10 cursor-pointer hover:bg-[#26619c] rounded-sm">Get Started Now</button>
+        </section>
+
+        <!-- section 10 Installation -->
+        <section class="flex flex-col md:flex-row md:justify-evenly md:items-center bg-white py-10">
+            <!-- windows -->
+            <div class="flex flex-col items-center">
+                <img class="w-[20%] md:w-[40%]" src="./images/windows.png" alt="">
+                <div class="bg-[#0066b8] py-2 px-20 cursor-pointer hover:bg-[#26619c] hover:drop-shadow-sm ">
+                    <div class="flex justify-center">
+                        <img class="w-6 mx-2" src="./images/icons8-download-32.png" alt="">
+                        <h5 class="text-[#e6f7fd] text-lg font-semibold">Windows</h5>
+                    </div>
+                    <p class="py-1 text-center text-[#e6f7fd] font-light text-xs">Windows 8, 10, 11</p>
+                </div>
+            </div>
+            <!-- linux -->
+            <div class="flex flex-col items-center ">
+                <img class="w-[20%] md:w-[30%]" src="./images/linux.png" alt="">
+                <div class="flex">
+                    <div class="bg-[#0066b8] mr-1 px-10 py-2 cursor-pointer hover:bg-[#26619c] hover:drop-shadow-sm">
+                        <div class="flex justify-center">
+                            <img class="w-6" src="./images/icons8-download-32.png" alt="">
+                            <h5 class="text-[#e6f7fd] text-lg font-semibold">.deb</h5>
+                        </div>
+                        <p class="text-[#e6f7fd] font-light text-sm">Debian, Ubuntu</p>
+                    </div>
+                    <div class="bg-[#0066b8] px-5 py-2 cursor-pointer hover:bg-[#26619c] hover:drop-shadow-sm">
+                        <div class="flex justify-center">
+                            <img class="w-6" src="./images/icons8-download-32.png" alt="">
+                            <h5 class="text-[#e6f7fd] text-lg font-semibold">.rpm</h5>
+                        </div>
+                        <p class="text-[#e6f7fd] text-sm font-light">Red Hat, Fedora, SUSE</p>
+                    </div>
+                </div>
+            </div>
+            <!-- apple -->
+            <div class="flex flex-col items-center">
+                <img class="w-[20%] md:w-[50%]" src="./images/apple.png" alt="">
+                <div class="bg-[#0066b8] py-2 px-20 cursor-pointer hover:bg-[#26619c] hover:drop-shadow-sm">
+                    <div class="flex justify-center">
+                        <img class="w-6" src="./images/icons8-download-32.png" alt="">
+                        <h5 class="text-[#e6f7fd] text-lg font-semibold">Mac</h5>
+                    </div>
+                    <p class="text-[#e6f7fd] text-sm font-light">macOS 10.11+</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- section end -->
+        <section class="flex flex-col bg-[#f5f5f5] py-10 px-[20%]">
+            <!-- upper -->
+            <div class="flex flex-col md:flex-row md:justify-between">
+                <!-- left  -->
+                <div class="self-center pb-10 md:pb-0">
+                    <h5 class="text-[#333] text-xl font-semibold text-center">Want new features sooner?</h5>
+                    <p class="py-2 text-center text-[#9da2a7] text-base md:text-lg">Get the <span class="text-[#0071bc] hover:underline" >Insiders build</span> instead.</p>
+                </div>
+                <!-- right -->
+                <div class="self-center pt-20 md:pt-0">
+                    <h5 class="text-[#333] text-lg font-semibold text-center">Use <span class=" text-[#0071bc] hover:underline" >vscode.dev</span> for quick edits online!</h5>
+                    <p class="py-2 text-[#9da2a7] text-base text-center md:text-lg">GitHub, Azure Repos, and local files.</p>
+                </div>
+            </div>
+            <!-- lower -->
+            <div class="mt-20 text-center">
+                <h5 class="text-[#707782] text-sm font-semibold py-3">LICENSE AND PRIVACY TERMS</h5>
+                <p class="text-[#707782] text-xs md:text-sm leading-8">By downloading and using Visual Studio Code, you agree to the <span class="text-[#0071bc] hover:underline" >license terms</span> and <span class="text-[#0071bc] hover:underline" >privacy statement</span>. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see <span class="text-[#0071bc] hover:underline" >How to Disable Crash Reporting</span> to learn how to disable it.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="flex flex-col md:flex-row justify-between items-center ml-10 py-3">
+        <!-- left -->
+        <div class="flex">
+            <p class="text-[#fff7eb] text-sm px-3">Hello from Seattle</p>
+            <a class="text-[#fff7eb] text-sm px-3 hover:text-[#ae45bf] href="">Follow @code</a>
+            <div class="flex">
+                <img class="w-4 mx-3" src="./images/GitHub-Mark-Light-32px.png" alt="">
+                <p class="text-[#fff7eb] text-sm">Star</p>
+            </div>
+        </div>
+        <!-- right -->
+        <div class="flex items-center sel">
+            <ul class="flex text-sm text-[#fff7eb]">
+                <li class="mx-3">Support</li>
+                <li class="mx-3">Privacy</li>
+                <li class="mx-3">Terms of Use</li>
+                <li class="mx-3">License</li>
+            </ul>
+            <img class="w-[20%] ml-4 m" src="./images/microsoft-.png" alt="">
+        </div>
+    </footer>
+
+
+    <script>
+        function Menu(e){
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+        }
+    </script>
+</body>
+</html>
