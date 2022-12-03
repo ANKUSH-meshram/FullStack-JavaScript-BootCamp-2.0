@@ -2,4 +2,4 @@
 
 **Preview:**
 
-![Output](./Output.png)
+![](./Output.png)
