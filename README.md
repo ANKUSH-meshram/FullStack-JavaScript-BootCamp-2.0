@@ -13,5 +13,14 @@
 **Project 3 -**
 [Link](./Project/FSJS-2.0-Project-03/)
 
+**Project 4 -**
+[Link](./Project/FSJS-2.0-Project-04/)
+
+**Project 5 -**
+[Link](./Project/FSJS-2.0-Project-05/)
+
+**Project 6 -**
+[Link](./Project/FSJS-2.0-Project-06/index.html)
+
 _**VS Code Clone: Mobile Responsive -**_
 [Link](./Project/VS-CodeClone-using-Tailwind/)
