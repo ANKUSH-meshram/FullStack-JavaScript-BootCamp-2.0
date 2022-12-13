@@ -11,8 +11,8 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-<body class="bg-[#151515] font-[Helvetica]">
-    <nav class="sticky top-0 z-[100] bg-[#151515] drop-shadow-lg md:flex md:h-[15vh] md:justify-between md:px-20 px-10 py-4 md:py-0 md:items-center text-[#c5c5c5] ">
+<body class="max-w-7xl bg-[#151515] font-[Helvetica]">
+    <nav class="sticky top-0 z-[100] bg-[#151515] drop-shadow md:flex md:h-[15vh] md:justify-between md:px-20 px-10 py-4 md:py-0 md:items-center text-[#c5c5c5] ">
         <!-- Logo -->
         <div class="flex justify-between">
             <a href=""> 
@@ -26,7 +26,7 @@
         <div>
             <ul class="md:flex md:text-sm opacity-0 md:opacity-100 z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:px-0 px-10 top-[-400px] md:transition-none transition-all ease-in duration-500 bg-[#212121] md:bg-transparent">
                 <li class="md:pr-6 cursor-pointer hover:text-white mt-6 md:mt-0 ">
-                    <a href="">Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li class="md:pr-6 cursor-pointer hover:text-white mt-6 md:mt-0 ">
                     <a href="">Features</a>
@@ -47,14 +47,51 @@
         <div>
             <ul class="md:flex md:text-sm md:items-center hidden md:block">
                 <li class="md:pr-10 cursor-pointer hover:text-white">Eng <i class="fa-sharp fa-solid fa-caret-down md:pl-2"></i></li>
-                <li class="md:pr-4 cursor-pointer md:mt-7">
+                <li class="md:pr-4 cursor-pointer md:mt-4">
                     <a class="hover:text-white" href="">Contact Us
-                        <img class="md:px-1 w-10 md:relative md:bottom-4 md:right-4 md:-z-10 " src="./images/Rectangle-dark 6773.png" alt="image">
-                        <img class="md:px-2 w-14 md:h-5 md:relative md:bottom-8 md:right-4 md:-z-50 " src="./images/Rectangle-light 6774.png" alt="image">
+                        <img class="md:px-1 w-12 md:relative md:bottom-5 md:right-4 md:-z-10 " src="./icons/btn-pink-bg.svg" alt="image">
                     </a>
                 </li>
             </ul>
     </nav>
+
+    <!-- Main section -->
+    <main class="pt-20"> 
+        <!-- section 1 -->
+        <section class="md:px-20 px-10 text-center md:text-start">
+            <h1 class="md:text-7xl text-3xl md:w-[75%] text-white md:leading-tight">Simplify All Transactions in <span class="text-[#f637ec] md:font-semibold">One Card</span></h1>
+            <p class="text-[#8a8a8a] md:py-12 py-6 md:text-lg md:w-[45%] md:tracking-wide">Hurry up and join now, with this you can manage your daily finances easily and safely.</p>
+            <div class="flex justify-center md:justify-start">
+                <span class="text-white md:text-lg md:font-medium md:pl-10">GET STARTED</span>
+                <img class="absolute md:left-20 left-36 -z-10 md:w-14" src="./icons/btn-pink-bg.svg" alt="image">
+                <img class="pl-2 w-[10%] md:w-[5%]" src="./icons/RightArrow.svg" alt="image">
+            </div>
+            <div class="flex flex-col md:flex-row md:items-center md:py-12 py-6">
+                <div class="flex items-center justify-center">
+                    <span class="text-white text-4xl font-semibold tracking-wide">42K </span>
+                    <i class="fa-sharp fa-solid fa-plus  md:text-xl text-[#f637ec] md:font-semibold"></i>
+                    <span class="px-4 text-xs md:text-lg text-[#d8d8d8]">Happy <br> Active User</span>
+                </div>
+                <img class="md:px-6 h-20 md:h-16 rotate-90 md:rotate-0" src="./icons/Vector 402.svg" alt="image">
+                <div class="flex items-center justify-center">
+                    <span class="md:pl-2 text-white text-4xl font-semibold tracking-wide">12K</span>
+                    <i class="fa-sharp fa-solid fa-plus md:text-xl text-[#f637ec] md:font-semibold"></i>
+                    <span class="px-4 text-xs md:text-lg text-[#d8d8d8]">Years <br> Experience</span>
+                </div>
+            </div>
+            <img class="absolute top-36 md:top-12 w-[90%] md:w-[57%] right-0 md:right-24" src="./images/backCards.png" alt="cards image">
+            <img class=" hidden md:block md:absolute top-36 md:top-24 md:w-[57%]  md:left-[540px]" src="./images/frontCards.png" alt="card image">
+        </section>
+
+        <!-- section two: Logo -->
+        <section class="hidden md:block md:my-20 md:px-[13%] md:grid grid-cols-5 md:py-16 md:gap-10 bg-[#292929]">
+            <img class="md:w-[60%]" src="./icons/Logo.svg" alt="logo">
+            <img class="md:w-[60%]" src="./icons/Logo.svg" alt="logo">
+            <img class="md:w-[60%]" src="./icons/Logo.svg" alt="logo">
+            <img class="md:w-[60%]" src="./icons/Logo.svg" alt="logo">
+            <img class="md:w-[60%]" src="./icons/Logo.svg" alt="logo">
+        </section>
+    </main>
 </body>
 
 <script>
