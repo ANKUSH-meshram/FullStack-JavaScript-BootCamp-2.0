@@ -4,6 +4,8 @@ assets/**
 *.img
 **/images
 images/**
+**/icons
+icons/**
 **.json
 **/.vscode
 .vscode/**
