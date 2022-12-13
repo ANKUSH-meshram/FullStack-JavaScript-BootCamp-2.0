@@ -8,43 +8,59 @@
     <link rel="icon" href="./images/VCards.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body class="bg-[#151515] font-[Helvetica]">
-    <nav class="md:flex md:h-[15vh] md:justify-between md:px-20 md:items-center text-[#c5c5c5] ">
+    <nav class="sticky top-0 z-[100] bg-[#151515] drop-shadow-lg md:flex md:h-[15vh] md:justify-between md:px-20 px-10 py-4 md:py-0 md:items-center text-[#c5c5c5] ">
         <!-- Logo -->
-        <div>
+        <div class="flex justify-between">
             <a href=""> 
-                <img class="md:w-[75%]" src="./icons/Logo.svg" alt="Logo">    
+                <img class="md:w-[70%] w-[50%]" src="./icons/Logo.svg" alt="Logo">    
             </a>
+            <span class="md:hidden block text-white text-xl pr-2">
+                <ion-icon name="menu" onclick="Menu(this)" class="h-8 w-6  cursor-pointer"></ion-icon>
+            </span>
         </div>
         <!-- list -->
         <div>
-            <ul class="md:flex md:text-sm">
-                <li class="md:pr-4 cursor-pointer hover:text-white">
+            <ul class="md:flex md:text-sm opacity-0 md:opacity-100 z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:px-0 px-10 top-[-400px] md:transition-none transition-all ease-in duration-500 bg-[#212121] md:bg-transparent">
+                <li class="md:pr-6 cursor-pointer hover:text-white mt-6 md:mt-0 ">
                     <a href="">Home</a>
                 </li>
-                <li class="md:pr-4 cursor-pointer hover:text-white">
+                <li class="md:pr-6 cursor-pointer hover:text-white mt-6 md:mt-0 ">
                     <a href="">Features</a>
                 </li>
-                <li class="md:pr-4 cursor-pointer hover:text-white">
+                <li class="md:pr-6 cursor-pointer hover:text-white mt-6 md:mt-0 ">
                     <a href="">Pricing</a>
                 </li>
-                <li class="md:pr-4 cursor-pointer hover:text-white">
+                <li class="md:pr-6 cursor-pointer hover:text-white mt-6 md:mt-0 ">
                     <a href="">About Us</a>
+                </li>
+                <li class="md:hidden md:pr-4 cursor-pointer mt-6 md:mt-7">
+                    <a class="hover:text-white" href="">Contact Us
+                    </a>
                 </li>
             </ul>
         </div>
         <!-- end -->
         <div>
-            <ul class="md:flex md:text-sm">
+            <ul class="md:flex md:text-sm md:items-center hidden md:block">
                 <li class="md:pr-10 cursor-pointer hover:text-white">Eng <i class="fa-sharp fa-solid fa-caret-down md:pl-2"></i></li>
-                <li class="md:pr-4 cursor-pointer">
-                    <a class="hover:text-white" href="">Contact Us</a>
-
-                    <img class="md:px-1 md:w-10 md:relative md:bottom-4 md:right-4 md:-z-10 " src="./images/Rectangle-dark 6773.png" alt="image">
-                    <img class="md:px-2 md:w-14 md:h-5 md:relative md:bottom-8 md:right-4 md:-z-50 " src="./images/Rectangle-light 6774.png" alt="image">
+                <li class="md:pr-4 cursor-pointer md:mt-7">
+                    <a class="hover:text-white" href="">Contact Us
+                        <img class="md:px-1 w-10 md:relative md:bottom-4 md:right-4 md:-z-10 " src="./images/Rectangle-dark 6773.png" alt="image">
+                        <img class="md:px-2 w-14 md:h-5 md:relative md:bottom-8 md:right-4 md:-z-50 " src="./images/Rectangle-light 6774.png" alt="image">
+                    </a>
                 </li>
             </ul>
     </nav>
 </body>
+
+<script>
+    function Menu(e){
+        let list = document.querySelector('ul');
+        e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+</script>
 </html>
