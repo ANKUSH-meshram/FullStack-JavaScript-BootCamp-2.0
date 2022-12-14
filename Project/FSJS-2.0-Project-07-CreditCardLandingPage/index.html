@@ -16,7 +16,7 @@
     <nav class="sticky top-0 z-[100] bg-[#151515] drop-shadow md:flex md:h-[15vh] md:justify-between md:px-20 px-10 py-4 md:py-0 md:items-center text-[#c5c5c5] ">
         <!-- Logo -->
         <div class="flex justify-between">
-            <a href=""> 
+            <a href="index.html"> 
                 <img class="md:w-[70%] w-[50%]" src="./icons/Logo.svg" alt="Logo">    
             </a>
             <span class="md:hidden block text-white text-xl pr-2">
@@ -27,16 +27,16 @@
         <div>
             <ul class="md:flex md:text-sm opacity-0 md:opacity-100 z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:px-0 px-10 top-[-400px] md:transition-none transition-all ease-in duration-500 bg-[#212121] md:bg-transparent">
                 <li class="md:pr-6 cursor-pointer hover:text-white mt-6 md:mt-0 ">
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li class="md:pr-6 cursor-pointer hover:text-white mt-6 md:mt-0 ">
-                    <a href="">Features</a>
+                    <a href="#features">Features</a>
                 </li>
                 <li class="md:pr-6 cursor-pointer hover:text-white mt-6 md:mt-0 ">
-                    <a href="">Pricing</a>
+                    <a href="#features">Pricing</a>
                 </li>
                 <li class="md:pr-6 cursor-pointer hover:text-white mt-6 md:mt-0 ">
-                    <a href="">About Us</a>
+                    <a href="#review">About Us</a>
                 </li>
                 <li class="md:hidden md:pr-4 cursor-pointer mt-6 md:mt-7">
                     <a class="hover:text-white" href="">Contact Us
@@ -57,7 +57,7 @@
     </nav>
 
     <!-- Main section -->
-    <main class="pt-20 pb-10"> 
+    <main class="pt-20"> 
         <!-- section 1 -->
         <section class="md:px-20 px-10 text-center md:text-start">
             <h1 class="md:text-7xl text-3xl md:w-[75%] text-white md:leading-tight">Simplify All Transactions in <span class="text-[#f637ec] md:font-semibold">One Card</span></h1>
@@ -94,7 +94,7 @@
         </section>
 
         <!-- section three: best Payment -->
-        <section class=" px-10 md:px-20 md:py-10 pt-10">
+        <section id="features" class=" px-10 md:px-20 py-10 pt-10">
             <!-- Top -->
             <div class="md:flex md:justify-between">
                 <!-- Left -->
@@ -108,21 +108,105 @@
             </div>
             <!-- Bottom -->
             <div class="pt-10 md:pt-[15%] flex flex-col md:flex-row items-center md:justify-between">
-                <div class="w-[60%] md:w-[30%] bg-[#272727] border-[1px] border-[#9d9d9d] flex flex-col items-center py-6 md:p-10 md:drop-shadow m-2 md:m-0">
+                <div class="w-[60%] md:w-[30%] bg-[#272727] border-[1px] border-[#9d9d9d] flex flex-col items-center py-6 md:p-10 md:drop-shadow m-2 md:m-0 cursor-pointer">
                     <img class="w-[50%]" src="./icons/dollar-circle.svg" alt="Dollar cirle">
                     <span class="text-white md:pt-10 md:text-lg">Free transaction fee</span>
                 </div>
-                <div class="w-[60%] md:w-[30%] bg-[#44403f] border-2 border-[#fdfdfc] flex flex-col items-center py-6 md:p-10 md:drop-shadow relative md:bottom-14 m-2 md:m-0">
-                    <img class="w-[50%]"  src="./icons/cloud-add.svg" alt="cloud image">
+                <div class="w-[60%] md:w-[30%] bg-[#44403f] border-2 border-[#fdfdfc] flex flex-col items-center py-6 md:p-10 md:drop-shadow md:relative md:bottom-14 md:m-0 cursor-pointer">
+                    <img class="w-[40%]"  src="./icons/cloud-add.svg" alt="cloud image">
                     <span class="text-[#dddddd] md:pt-10 text-center md:text-lg">Easy to access anytime and anywhere</span>
                 </div>
-                <div class="w-[60%] md:w-[30%] bg-[#272727] border-[1px] border-[#9d9d9d] flex flex-col items-center py-6 md:p-10 md:drop-shadow m-2 md:m-0">
+                <div class="w-[60%] md:w-[30%] bg-[#272727] border-[1px] border-[#9d9d9d] flex flex-col items-center py-6 md:p-10 md:drop-shadow m-2 md:m-0 cursor-pointer">
                     <img class="w-[50%]" src="./icons/lock.svg" alt="Lock image">
                     <span class="text-white md:pt-10 md:text-lg">Guaranteed Safety</span>
                 </div>
             </div>
         </section>
+
+        <!-- section four: Unique and Interesting -->
+        <section id="branding" class="bg-[#fceffb] md:mx-20 md:mt-20 px-10 md:px-20 pt-10 md:pt-20 text-center">
+            <h3 class="text-[#151515 text-4xl md:text-6xl md:px-[15%] md:leading-[120%]">Unique and interesting <span class="text-[#f637ec] font-semibold">card choices</span></h3>
+            <p class="pt-6 md:pt-12 px-8 md:px-[22%] text-[#565356]">We provide card editing features, where users can edit unique cards according to the wishes and preferences of the users themselves.</p>
+            <img class="relative bottom-8" src="./images/VCards.png" alt="cards image">
+        </section>
+
+        <!-- section five: customer review -->
+        <section id="review" class="px-10 md:px-20 pt-10 md:pt-20">
+            <h3 class="text-center text-white text-2xl md:text-6xl px-10 md:px-[15%] md:leading-[125%]">Customers are satisfied with <span class="text-[#f637ec] font-semibold">the features</span> we provide</h3>
+            <p class="text-center text-[#c0c0c0] pt-6 md:pt-10 text-sm md:text-lg font-extralight px-20 md:px-[27%]">With the  various features that we provide, therefore many customers like the features that we provide.</p>
+
+            <div class="md:px-[10%] pt-10 md:pt-20 grid grid-cols-2 gap-4 md:gap-x-20 gap-y-10">
+                <div class="bg-[#52504f] border-2 p-4 cursor-pointer">
+                    <img class="w-[50%]" src="./icons/5stars.svg" alt="% stars">
+                    <p class="py-6 text-sm text-[#d0d1d2]">This is the best finance platform I've ever found, lots of features that definitely make me more satusfied!</p>
+                    <h5 class="text-sm text-[#d0d1d2]">Melvin Yoga</h5>
+                    <p class="text-sm text-[#7b7c7e]">New York, America</p>
+                </div>
+                <div class="bg-[#1e1f24] border-[1px] p-4 cursor-pointer">
+                    <img class="w-[50%]" src="./icons/4stars.svg" alt="$ stars">
+                    <p class="py-6 text-sm text-[#d0d1d2]">Very good and recommended financial platform, the features are very satisfying, you all should try this platform!</p>
+                    <h5 class="text-sm text-[#d0d1d2]">Gabriel Putra</h5>
+                    <p class="text-sm text-[#7b7c7e]">Jakarta, Indonesia</p>
+                </div>
+                <div class="bg-[#1e1f24] border-[1px] p-4 cursor-pointer">
+                    <img class="w-[50%]" src="./icons/4stars.svg" alt="4 stars">
+                    <p class="py-6 text-sm text-[#d0d1d2]">This is the first time I have found a financial platform as good as this, with various features that really help me in managing my finances.</p>
+                    <h5 class="text-sm text-[#d0d1d2]">Farhan Putra</h5>
+                    <p class="text-sm text-[#7b7c7e]">Paris, French</p>
+                </div>
+                <div class="bg-[#1e1f24]  border-[1px] p-4 cursor-pointer">
+                    <img class="w-[50%]" src="./icons/5stars.svg" alt="5 stars">
+                    <p class="py-6 text-sm text-[#d0d1d2]">The best financial platform I've ever found, here we can custom cards according to our wishes, I'm very satisfied!</p>
+                    <h5 class="text-sm text-[#d0d1d2]">Alex Georgio</h5>
+                    <p class="text-sm text-[#7b7c7e]">Wangon, Indonesia</p>
+                </div>
+            </div>
+            <div class="flex justify-center pt-10">
+                <div class="bg-[#f637ec] w-20 h-4 rounded-full cursor-pointer"></div>
+                <div class="bg-[#444444] w-4 h-4 rounded-[50%] ml-2 cursor-pointer"></div>
+                <div class="bg-[#444444] w-4 h-4 rounded-[50%] ml-2 cursor-pointer"></div>
+                <div class="bg-[#444444] w-4 h-4 rounded-[50%] ml-2 cursor-pointer"></div>
+            </div>
+        </section>
+
+        <!-- section six: customizing -->
+        <section class="mt-10 md:mt-20 text-center">
+            <div>
+                <img class="z-[-20]" src="./images/Rectangle-dark 6773.png" alt="image">
+                <img class="mt-[-180px] md:mt-[-480px]"src="./images/Rectangle-light 6774.png" alt="image">
+            </div>
+
+            <div class="mt-[-110px] md:mt-[-330px]">
+                <h1 class="md:px-20 text-white text-2xl  md:text-6xl md:px-[20%] md:leading-[110%]">Let's start <span class="text-[#151515] font-semibold">customing</span> your card now</h1>
+                <div class="flex justify-center md:justify-center pt-2 md:pt-10">
+                    <span class="text-white md:text-lg md:font-medium md:pl-10 ">GET STARTED</span>
+                    <img class="absolute right-72 md:left-[540px] md:w-14" src="./icons/btn-pink-bg.svg" alt="image">
+                    <img class="pl-2 w-[10%] md:w-[5%]" src="./icons/RightArrow.svg" alt="image">
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="px-10 md:px-20 py-10 md:py-20 mt-12 md:mt-[14%] flex items-center">
+        <a href="index.html">
+            <img class="w-[40%] md:w-[80%] cursor-pointer" src="./icons/Logo.svg" alt="logo">
+        </a>
+        <ul class="flex text-[#dadada] md:ml-[15%] ml-[-10%]">
+            <li class="md:pl-8 pl-3 text-xs md:text-sm md:hover:text-white" >
+                <a href="#branding">Branding</a>
+            </li>
+            <li class="md:pl-8 pl-3 text-xs md:text-sm md:hover:text-white" >
+                <a href="">Contact Us</a>
+            </li>
+            <li class="md:pl-8 pl-3 text-xs md:text-sm md:hover:text-white" >
+                <a href="">Privacy Policy</a>
+            </li>
+            <li class="md:pl-8 pl-3 text-xs md:text-sm md:hover:text-white" >
+                <a href="">FAQs</a>
+            </li>
+        </ul>
+    </footer>
 </body>
 
 <script>
