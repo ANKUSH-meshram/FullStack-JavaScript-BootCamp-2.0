@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting Site Landing Page</title>
+    <link rel="icon" href="./Assets/Logo.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="max-w-7xl bg-[#111010]">
+    <nav class="w-full h-[10vh] fixed top-0 flex justify-between items-center px-10 md:px-20 md:pt-4 z-10 dropshadow">
+
+        <img class="w-[20%] md:w-[10%]" src="./Assets/Logo.svg" alt="Logo">
+        <span class="md:hidden block text-xl pt-2">
+            <ion-icon name="menu" onclick="Menu(this)" class="h-10 w-7 cursor-pointer text-gray-500 "></ion-icon>
+        </span>
+        
+        <ul class="text-[#929191] md:flex opacity-0 md:opacity-100 z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:px-0 px-10 top-[-400px] md:transition-none transition-all ease-in duration-500 bg-[#494848] md:bg-transparent">
+            <li class="md:px-4 text-lg md:text-sm py-5 md:py-0 border-b-[1px] border-[#1d1c1c] md:border-0">
+                <a class="hover:text-white duration-300" href="">Hosting</a>
+            </li>
+            <li class="md:px-4 text-lg md:text-sm py-5 md:py-0 border-b-[1px] border-[#1d1c1c] md:border-0">
+                <a class="hover:text-white duration-300" href="">Domain</a>
+            </li>
+            <li class="md:px-4 text-lg md:text-sm py-5 md:py-0 border-b-[1px] border-[#1d1c1c] md:border-0">
+                <a class="hover:text-white duration-300" href="">Features</a>
+            </li>
+            <li class="md:px-4 text-lg md:text-sm py-5 md:py-0 border-b-[1px] border-[#1d1c1c] md:border-0">
+                <a class="hover:text-white duration-300" href="">Support</a>
+            </li>
+            <li class="md:px-4 text-lg md:text-sm py-5 md:py-0 border-b-[1px] border-[#1d1c1c] md:border-0">
+                <a class="hover:text-white duration-500" href="">Community</a>
+            </li>
+            <button class="mt-4 text-[#e9f5ff] bg-[#0c8bfd] w-full h-10 ">
+                Login
+            </button>
+        </ul>
+
+        <button class="text-[#e9f5ff] bg-[#0c8bfd] md:py-2 md:px-6 md:rounded-full hover:text-[#0c8bfd] hover:bg-[#e9f5ff] duration-700 ease-in-out font-medium hidden md:block">
+            Login
+        </button>
+    </nav>
+</body>
+
+<script>
+    function Menu(e){
+        let list = document.querySelector('ul');
+        e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+</script>
+</html>
