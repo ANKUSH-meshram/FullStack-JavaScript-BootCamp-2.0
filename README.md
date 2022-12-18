@@ -25,5 +25,8 @@
 **Project 7 -**
 [Link](https://github.com/ANKUSH-meshram/FullStack-JavaScript-BootCamp-2.0/tree/master/Project/FSJS-2.0-Project-07-CreditCardLandingPage)
 
+**Project 8 -**
+[Link](./Project/FSJS-2.0-Project-08-HostingSiteLandingPage/)
+
 _**VS Code Clone: Mobile Responsive -**_
 [Link](./Project/VS-CodeClone-using-Tailwind/)
