@@ -7,7 +7,7 @@ This site woks on all the devices as it is fully responsive.
 
 **Source code :** [Code](https://github.com/ANKUSH-meshram/FullStack-JavaScript-BootCamp-2.0/blob/master/Project/FSJS-2.0-Project-07-CreditCardLandingPage/index.html)
 
-**Site deployed at :** [Credit Card Site](https://credit-card-site-by-ankush.netlify.app/)
+**Site deployed at :** [Credit Card Site](https://credit-card-landing-page-by-ankush.netlify.app/)
 
 
 ## Site overview :
