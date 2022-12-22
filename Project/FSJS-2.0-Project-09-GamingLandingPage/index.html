@@ -10,9 +10,9 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-<body class="max-w-7xl m-0 p-0 bg-[#111010] sm:bg-[#ffffff] lg:bg-[#ffffff]">
+<body class="max-w-7xl m-0 p-0 bg-[#111010] sm:bg-[#fff] lg:bg-[#fff]">
     <!-- Navbar -->
-    <nav class="bg-[#045256] sm:bg-transparent lg:bg-transparent h-15 py-4 sm:py-4 lg:py-6 text-center sm:text-start lg:text-star vh sm:flex lg:flex sm:items-center md:items-center justify-between px-3 sm:px-6 lg:px-20 drop-shadow-lg">
+    <nav class="bg-[#045256] w-full h-[10vh] sm:bg-transparent lg:bg-transparent py-4 sm:py-4 lg:py-6 text-center sm:text-start lg:text-star sm:flex lg:flex sm:items-center md:items-center justify-between px-3 sm:px-10 lg:px-20 drop-shadow-lg">
         <div class="flex justify-between">
             <a href="index.html">
                 <img class="h-8 lg:h-10 cursor-pointer sm:w-20 lg:w-[100%]" src="./Icons/Logo.svg" alt="Logo">
@@ -23,7 +23,7 @@
         </div>
         <!-- List -->
         <ul class="bg-[#193e46] sm:bg-transparent lg:bg-transparent opacity-0 sm:opacity-100 lg:opacity-100 sm:basis-4/5 lg:basis-4/5 text-[#b8b6b6] sm:flex lg:flex text-xl sm:text-sm lg:text-base sm:justify-between lg:justify-between
-        z-[1] sm:z-auto lg:z-auto sm:static lg:static absolute w-full left-0 sm:w-auto lg:w-auto top-[-400px] lg:transition-none sm:transition-none transition-all ease-in duration-500">
+        z-[1] sm:z-auto lg:z-auto sm:static lg:static absolute w-full left-0 w-full sm:w-auto lg:w-auto top-[-400px] lg:transition-none sm:transition-none transition-all ease-in duration-500">
             <!-- list items -->
             <div class="sm:flex lg:flex sm:items-center md:items-center">
                 <li class="py-4 sm:py-0 lg:py-0 text-center sm:text-start lg:text-start sm:pr-2 lg:px-4 hover:text-white ease-in duration-300">
@@ -51,14 +51,49 @@
         </ul>
     </nav>
     <!-- bg-image  -->
-    <img class="absolute top-0 bg-cover bg-center z-[-100] hidden sm:block lg:block sm:w-full lg:w-full" 
+    <img class="absolute top-0 bg-cover z-[-100] hidden opacity-100 sm:block lg:block sm:w-full lg:w-full" 
     src="./images/futuristic-bg.png" alt="background">
+
+    <!-- Main Content -->
+    <main class="py-10 sm:py-10 lg:py-20">
+        <!-- Section 1- Hero Section -->
+        <section class="px-3 sm:px-10 lg:px-20 sm:flex lg:flex sm:justify-between lg:justify-between">
+            <!-- Left -->
+            <div class="sm:w-[55%] lg:w-[55%]">
+                <h1 class="text-white text-center sm:text-start lg:text-start text-3xl sm:text-3xl lg:text-5xl font-bold leading-[160%] sm:leading-[140%] lg:leading-[130%]">
+                    Play Game Everytime Always Be Winner And Strong
+                </h1>
+                <p class="text-[#8d8a8b] text-center sm:text-start lg:text-start sm:pr-10 lg:pr-[20%] py-5 sm:py-5 lg:py-10 text-sm sm:text-base lg:text-base">
+                    Improve your gaming skills by playing games that are currently popular so that you don't go out of style improve skills
+                </p>
+                <div class="flex flex-col sm:flex-row ">
+                    <button class="text-white sm:mr-2 lg:mr-2 bg-[#f4694c] w-full sm:w-[33%] lg:w-[27%] h-12 sm:h-12 lg:h-14 text-lg lg:text-xl font-semibold hover:bg-transparent hover:border-2 hover:border-[#b3b8c2] ease-in duration-700 cursor-pointer">
+                        Get started
+                    </button>
+                    <button class="text-[#c7c1c1] sm:ml-2 lg:ml-2 w-full sm:w-[33%] lg:w-[27%] h-12 sm:h-12 lg:h-14 text-lg lg:text-xl font-semibold border-2 border-[#b3b8c2] hover:bg-[#b3b8c2] hover:text-[#f4694c] hover:border-0 ease-in duration-700 my-4 sm:my-0">
+                        Learn more
+                    </button>
+                </div>
+            </div>
+            <!-- Right  -->
+            <div class="sm:w-[40%] lg:self-center mt-10 sm:mt-[15%]">
+                <img class="w-[20%] ml-[40%] cursor-pointer" src="./Icons/playButton.svg" alt="play button">
+                <div class="mt-6 sm:mt-14 lg:mt-[30%] flex sm:px-8 lg:px-12">
+                    <img class="relative sm:bottom-3 lg:bottom-6 sm:right-2 lg:right-2" src="./Icons/dash.svg" alt="dash">
+                    <p class="text-center sm:text-start text-[#dad9d9] sm:text-lg lg:text-xl">
+                        The King Of Terania And Last Seasion XXIV 
+                    </p>
+                    <img class="relative sm:top-5 lg:top-10" src="./Icons/rightArrow.svg" alt="right arraow">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 <script>
     function Menu(e){
         let list = document.querySelector('ul');
-        e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+        e.name === 'menu' ? (e.name = "close",list.classList.add('top-[70px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[70px]'),list.classList.remove('opacity-100'))
     }
 </script>
 </html>
