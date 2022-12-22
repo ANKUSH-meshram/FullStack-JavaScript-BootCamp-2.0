@@ -7,42 +7,58 @@
     <title>Gaming Landing Page</title>
     <link rel="icon" href="./images/Controller.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-<body class="max-w-7xl m-0 p-0">
+<body class="max-w-7xl m-0 p-0 bg-[#111010] sm:bg-[#ffffff] lg:bg-[#ffffff]">
     <!-- Navbar -->
-    <nav class="md:flex md:items-center justify-between md:px-20 md:py-6">
-        <img class="md:w-[10%]" src="./Icons/Logo.svg" alt="Logo">
+    <nav class="bg-[#045256] sm:bg-transparent lg:bg-transparent h-15 py-4 sm:py-4 lg:py-6 text-center sm:text-start lg:text-star vh sm:flex lg:flex sm:items-center md:items-center justify-between px-3 sm:px-6 lg:px-20 drop-shadow-lg">
+        <div class="flex justify-between">
+            <a href="index.html">
+                <img class="h-8 lg:h-10 cursor-pointer sm:w-20 lg:w-[100%]" src="./Icons/Logo.svg" alt="Logo">
+            </a>
+            <span class="sm:hidden lg:hidden block text-white text-xl">
+            <ion-icon name="menu" onclick="Menu(this)" class="h-10 w-8 cursor-pointer"></ion-icon>
+        </span>
+        </div>
         <!-- List -->
-        <ul class="md:basis-4/5 text-[#b8b6b6] md:flex md:text-base md:justify-between">
+        <ul class="bg-[#193e46] sm:bg-transparent lg:bg-transparent opacity-0 sm:opacity-100 lg:opacity-100 sm:basis-4/5 lg:basis-4/5 text-[#b8b6b6] sm:flex lg:flex text-xl sm:text-sm lg:text-base sm:justify-between lg:justify-between
+        z-[1] sm:z-auto lg:z-auto sm:static lg:static absolute w-full left-0 sm:w-auto lg:w-auto top-[-400px] lg:transition-none sm:transition-none transition-all ease-in duration-500">
             <!-- list items -->
-            <div class="md:flex md:items-center">
-                <li class="md:px-4 md:hover:text-white md:ease-in md:duration-300">
+            <div class="sm:flex lg:flex sm:items-center md:items-center">
+                <li class="py-4 sm:py-0 lg:py-0 text-center sm:text-start lg:text-start sm:pr-2 lg:px-4 hover:text-white ease-in duration-300">
                     <a href="">Home</a>
                 </li>
-                <li class="md:px-4 md:hover:text-white md:ease-in md:duration-300">
+                <li class="py-4 sm:py-0 lg:py-0 text-center sm:text-start lg:text-start sm:px-2 lg:px-4 hover:text-white ease-in duration-300">
                     <a href="">Categories</a>
                 </li>
-                <li class="md:px-4 md:hover:text-white md:ease-in md:duration-300">
+                <li class="py-4 sm:py-0 lg:py-0 text-center sm:text-start lg:text-start sm:px-2 lg:px-4 hover:text-white ease-in duration-300">
                     <a href="">How it work</a>
                 </li>
-                <li class="md:px-4 md:hover:text-white md:ease-in md:duration-300">
+                <li class="py-4 sm:py-0 lg:py-0 text-center sm:text-start lg:text-start sm:px-2 lg:px-4 hover:text-white ease-in duration-300">
                     <a href="">Pricing</a>
                 </li>
             </div>
             <!-- Buttons -->
-            <div class="text-[#b8b6b6]">
-                <button class="md:mx-2 md:w-20 md:h-8 md:text-sm md:font-semibold md:hover:bg-[#b8b6b6] md:duration-500 md:ease-in md:hover:text-[#f4694c]">
+            <div class="text-[#b8b6b6] flex flex-col sm:flex-row">
+                <button class="mx-2 w-full sm:w-16 h-14 sm:h-8 lg:w-20 lg:h-8 font-semibold lg:hover:bg-[#b8b6b6] lg:duration-500 lg:ease-in lg:hover:text-[#f4694c]">
                     Sign In
                 </button>
-                <button class="md:mx-2 bg-[#f4694c] md:w-20 md:h-8 md:text-sm md:font-semibold md:hover:bg-[#b8b6b6] md:duration-500 md:ease-in md:hover:text-[#f4694c]">
+                <button class="my-4 sm:my-0 lg:my-0 lg:mx-2 bg-[#f4694c] w-full sm:w-16 h-14 sm:h-8 lg:w-20 lg:h-8 font-semibold lg:hover:bg-[#b8b6b6] lg:duration-500 lg:ease-in lg:hover:text-[#f4694c]">
                     Sign Up
                 </button>
         </div>
         </ul>
     </nav>
     <!-- bg-image  -->
-    <img class="absolute top-0 bg-cover bg-center z-[-100] md:w-full" 
+    <img class="absolute top-0 bg-cover bg-center z-[-100] hidden sm:block lg:block sm:w-full lg:w-full" 
     src="./images/futuristic-bg.png" alt="background">
 </body>
+
+<script>
+    function Menu(e){
+        let list = document.querySelector('ul');
+        e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+</script>
 </html>
