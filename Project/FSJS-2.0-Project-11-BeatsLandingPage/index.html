@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beats Landing Page</title>
+    <link rel="icon" href="./images/beatsLogo.png">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#0f0f10] font-[Poppins] max-w-7xl m-0 p-0">
+    <header class="lg:h-fit">
+        <nav class="fixed top-0 w-full px-4 sm:px-10 lg:px-20 py-2 sm:py-4 sm:flex sm:justify-between bg-[#1e1e21] sm:bg-[#0f0f10] shadow-sm lg:shadow-none shadow-black z-[50]">
+            <div class="flex justify-between items-center sm:pl-10 lg:pl-20">
+                <a href="index.html">
+                    <img class="sm:w-12" src="./images/beatsLogo.png" alt="beatsLogo">
+                </a>
+                <span>
+                    <ion-icon name="menu" onclick="toggleMenu(this)" class="text-gray-100 text-2xl sm:hidden cursor-pointer"></ion-icon>
+                </span>
+            </div>
+            <!-- NavLinks -->
+            <div class="nav-links duration-1000 sm:static absolute left-[200%] bg-[#1e1e21] sm:bg-transparent sm:w-auto w-full flex items-center px-5">
+                <ul class="flex sm:flex-row flex-col lg:pr-10 gap-y-8 lg:gap-y-0 sm:gap-x-8 lg:gap-x-10 sm:items-center py-8 sm:py-4 lg:py-0">
+                    <!-- List -->
+                    <li class="text-[#f6f6f6] lg:text-xs font-semibold sm:font-light lg:font-semibold hover:text-gray-500 ease-in duration-300">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="text-[#f6f6f6] lg:text-xs font-semibold sm:font-light lg:font-semibold hover:text-gray-500 ease-in duration-300">
+                        <a href="#">Specs</a>
+                    </li>
+                    <li class="text-[#f6f6f6] lg:text-xs font-semibold sm:font-light lg:font-semibold hover:text-gray-500 ease-in duration-300">
+                        <a href="#">Case</a>
+                    </li>
+                    <li class="text-[#f6f6f6] lg:text-xs font-semibold sm:font-light lg:font-semibold hover:text-gray-500 ease-in duration-300">
+                        <a href="#">Products</a>
+                    </li>
+                    <!-- button -->
+                    <li>
+                        <button class="lg:text-xs text-[#1e1e21] lg:text-[#fafafa] lg:bg-[#1e1e21] bg-[#f6f6f6] w-28 lg:w-24 h-10 lg:h-8 lg:rounded hover:bg-[#fafafa] hover:text-[#1e1e21] ease-in duration-500 shadow-md">
+                            Shop
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+
+<script>
+    const navLinks = document.querySelector('.nav-links')
+    function toggleMenu(e) {
+        e.name = e.name === 'menu' ? 'close' : 'menu'
+        navLinks.classList.toggle('left-[0%]')
+    }
+</script>
+</html>
