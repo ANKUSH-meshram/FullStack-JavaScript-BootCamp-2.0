@@ -12,14 +12,14 @@
 </head>
 <body class="max-w-7xl m-0 p-0 bg-[#111010] sm:bg-[#fff] lg:bg-[#fff]">
     <!-- Navbar -->
-    <nav class="z-10 fixed bg-[#045256] w-full h-[10vh] sm:bg-transparent lg:bg-transparent py-4 sm:py-4 lg:py-6 text-center sm:text-start lg:text-star sm:flex lg:flex sm:items-center md:items-center justify-between px-3 sm:px-10 lg:px-20 drop-shadow-lg">
+    <nav class="z-10 fixed bg-[#045256] w-full h-[10vh] sm:bg-transparent lg:bg-transparent py-4 sm:py-4 lg:py-6 text-center sm:text-start lg:text-start sm:flex lg:flex sm:items-center md:items-center justify-between px-3 sm:px-10 lg:px-20 shadow-lg shadow-gray-900 sm:shadow-none">
         <div class="flex justify-between">
             <a href="index.html">
                 <img class="h-8 lg:h-10 cursor-pointer sm:w-20 lg:w-[100%]" src="./Icons/Logo.svg" alt="Logo">
             </a>
             <span class="sm:hidden lg:hidden block text-white text-xl">
-            <ion-icon name="menu" onclick="Menu(this)" class="h-10 w-8 cursor-pointer"></ion-icon>
-        </span>
+                <ion-icon name="menu" onclick="Menu(this)" class="h-10 w-8 cursor-pointer"></ion-icon>
+            </span>
         </div>
         <!-- List -->
         <ul class="bg-[#193e46] sm:bg-transparent lg:bg-transparent opacity-0 sm:opacity-100 lg:opacity-100 sm:basis-4/5 lg:basis-4/5 text-[#b8b6b6] sm:flex lg:flex text-xl sm:text-sm lg:text-base sm:justify-between lg:justify-between
@@ -51,7 +51,7 @@
         </ul>
     </nav>
     <!-- bg-image  -->
-    <img class="absolute top-0 bg-cover z-[-100] hidden opacity-100 sm:block lg:block sm:w-full lg:w-full" 
+  lg:bg-transparent   <img class="absolute top-0 bg-cover z-[-100 lg:shadow lg:hover:bg-[#fdf5ee] lg:hover:shadow:md lg:hover:shadow-slate-500 ease-in duration-700 cursor-pointer ] hidden opacity-100 sm:block lg:block sm:w-full lg:w-full" 
     src="./images/futuristic-bg.png" alt="background">
 
     <!-- Main Content -->
@@ -67,17 +67,17 @@
                     Improve your gaming skills by playing games that are currently popular so that you don't go out of style improve skills
                 </p>
                 <div class="flex flex-col sm:flex-row ">
-                    <button class="text-white sm:mr-2 lg:mr-2 bg-[#f4694c] w-full sm:w-[33%] lg:w-[27%] h-12 sm:h-12 lg:h-14 text-lg lg:text-xl font-semibold hover:bg-transparent hover:border-2 hover:border-[#b3b8c2] ease-in duration-700 cursor-pointer">
+                    <button class="text-white sm:mr-2 lg:mr-2 bg-[#f4694c] w-full sm:w-[33%] lg:w-[27%] h-12 sm:h-12 lg:h-14 text-lg lg:text-xl font-semibold hover:bg-transparent hover:border-2 hover:border-[#b3b8c2] ease-in duration-700 cursor-pointer shadow-md">
                         Get started
                     </button>
-                    <button class="text-[#c7c1c1] sm:ml-2 lg:ml-2 w-full sm:w-[33%] lg:w-[27%] h-12 sm:h-12 lg:h-14 text-lg lg:text-xl font-semibold border-2 border-[#b3b8c2] hover:bg-[#b3b8c2] hover:text-[#f4694c] hover:border-0 ease-in duration-700 my-4 sm:my-0">
+                    <button class="text-[#c7c1c1] sm:ml-2 lg:ml-2 w-full sm:w-[33%] lg:w-[27%] h-12 sm:h-12 lg:h-14 text-lg lg:text-xl font-semibold border-2 border-[#b3b8c2] hover:bg-[#b3b8c2] hover:text-[#f4694c] hover:border-0 ease-in duration-700 my-4 sm:my-0 shadow-md">
                         Learn more
                     </button>
                 </div>
             </div>
             <!-- Right  -->
             <div class="sm:w-[40%] lg:self-center mt-10 sm:mt-[15%]">
-                <img class="w-[20%] ml-[40%] cursor-pointer" src="./Icons/playButton.svg" alt="play button">
+                <img class="w-[20%] ml-[40%] cursor-pointer shadow-md" src="./Icons/playButton.svg" alt="play button">
                 <div class="mt-6 sm:mt-14 lg:mt-[30%] flex sm:px-8 lg:px-12">
                     <img class="relative sm:bottom-3 lg:bottom-6 sm:right-2 lg:right-2" src="./Icons/dash.svg" alt="dash">
                     <p class="text-center sm:text-start text-[#dad9d9] sm:text-lg lg:text-xl">
@@ -93,7 +93,7 @@
             <!-- cards -->
             <div class="grid grid-col-4 sm:grid sm:grid-cols-2 gap-x-5 gap-y-24 lg:flex lg:justify-between mx-14 sm:mx-0 my-10 sm:mt-14 lg:text-sm"> 
                 <!-- card 1 -->
-                <div class="lg:w-[24%] cursor-pointer drop-shadow-lg">
+                <div class="lg:w-[24%] cursor-pointer hover:drop-shadow-lg">
                     <img class="h-[90%]" src="./images/image 2.png" alt="">
                     <div class="bg-[#393d3d] flex py-3 px-3 opacity-90">
                         <div class="w-[65%]">
@@ -117,7 +117,7 @@
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div class="lg:w-[24%] cursor-pointer drop-shadow-lg">
+                <div class="lg:w-[24%] cursor-pointer hover:drop-shadow-lg">
                     <img class="h-[90%]" src="./images/image 4.png" alt="">
                     <div class="bg-[#23231b] flex py-3 px-3 opacity-90">
                         <div class="w-[65%]">
@@ -142,7 +142,7 @@
                     </div>
                 </div>
                 <!-- Card 3  -->
-                <div class="lg:w-[24%] cursor-pointer drop-shadow-lg">
+                <div class="lg:w-[24%] cursor-pointer hover:drop-shadow-lg">
                     <img class="h-[90%]" src="./images/image 3.png" alt="">
                     <div class="bg-[#494259] flex py-3 px-3 opacity-90">
                         <div class="w-[65%]">
@@ -164,7 +164,7 @@
                     </div>
                 </div>
                 <!-- card 4  -->
-                <div class="lg:w-[24%] cursor-pointer drop-shadow-lg">
+                <div class="lg:w-[24%] cursor-pointer hover:drop-shadow-lg">
                     <img class="h-[90%]" src="./images/Rectangle 56.png" alt="">
                     <div class="bg-[#705b51] flex py-3 px-3 opacity-90">
                         <div class="w-[65%]">
@@ -191,7 +191,7 @@
             <!-- War game -->
             <div class="sm:flex sm:justify-between mt-[30%] sm:mt-[20%] px-4 sm:px-0">
                 <div class="sm:w-[40%]">
-                    <img class="sm:h-[30vh] lg:h-[60vh] drop-shadow drop-shadow-lg cursor-pointer" src="./images/Rectangle 57.png" alt="">
+                    <img class="sm:h-[30vh] lg:h-[60vh] shadow-sm hover:shadow-lg hover:shadow-slate-700 cursor-pointer" src="./images/Rectangle 57.png" alt="">
                 </div>
                 <div class="sm:w-[50%] sm:self-center sm:pr-10 py-6 sm:py-0 text-center sm:text-start">
                     <h1 class="text-2xl sm:text-3xl lg:text-5xl text-white sm:text-[#121212] font-bold">
@@ -201,11 +201,98 @@
                         This is  font-semiboldthe best episode that we present to you, we collect all over asia and we present it to you only for you, our special customer, this is an episode discussing the design of various types of design
                     </p>
                     <div>
-                        <button class="bg-[#f4694c] sm:bg-transparent sm:border-[1.5px] sm:border-[#f4694c] w-[40%] sm:w-[33%] lg:w-[25%] h-10 sm:h-12 lg:h-10 font-semibold hover:bg-[#f4694c] hover:border-0 ease-in duration-700 mr-3">
+                        <button class="bg-[#f4694c] sm:bg-transparent sm:border-[1.5px] sm:border-[#f4694c] w-[40%] sm:w-[33%] lg:w-[25%] h-10 sm:h-12 lg:h-10 font-semibold hover:bg-[#f4694c] hover:border-0 ease-in duration-700 mr-3 hover:shadow-md hover:shadow-slate-500">
                             Explore Now
                         </button>
-                        <button class="bg-[#f4694c] sm:bg-transparent sm:border-[1.5px] sm:border-[#f4694c] w-[40%] sm:w-[33%] lg:w-[25%] h-10 sm:h-12 lg:h-10 font-semibold hover:bg-[#f4694c] hover:border-0 ease-in duration-700">
+                        <button class="bg-[#f4694c] sm:bg-transparent sm:border-[1.5px] sm:border-[#f4694c] w-[40%] sm:w-[33%] lg:w-[25%] h-10 sm:h-12 lg:h-10 font-semibold hover:bg-[#f4694c] hover:border-0 ease-in duration-700 hover:shadow-md hover:shadow-slate-500">
                             Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Recommended -->
+        <section class="px-6 sm:px-10 lg:px-20 py-10">
+            <div class="flex justify-between">
+                <h1 class="w-[70%] sm:w-[45%] lg:w-[40%] text-white sm:text-[#121212] sm:text-3xl lg:text-4xl font-bold lg:leading-[130%]">
+                    Game Recommended For You This Week
+                </h1>
+                <span class="flex items-center">
+                    <img class="bg-[#fde1db] mr-2 px-3 w-12 h-12 shadow-md sm:shadow-slate-300" src="./Icons/leftArrow.svg" alt="leftArrow">
+                    <img class="bg-[#f4694c] ml-2 px-3 w-12 h-12 shadow-md sm:shadow-slate-300" src="./Icons/rightArrow.svg" alt="rightArrow">
+                </span>
+            </div>
+            <!-- cards -->
+            <div class="pt-6 sm:pt-10 grid sm:grid-cols-2 sm:gap-4 lg:gap-x-8 gap-y-4 lg:gap-y-10">
+                <!-- card 1 -->
+                <div class="flex sm:flex-row flex-col bg-[#fdf5ee] lg:bg-transparent shadow-md shadow-gray-500 sm:shadow-slate-700 lg:shadow lg:hover:bg-[#fdf5ee] lg:hover:shadow:md lg:hover:shadow-slate-500 ease-in duration-700 cursor-pointer ">
+                    <img class="w-full h-[30vh] sm:h-auto sm:w-[40%] lg:w-[45%]" src="./images/Rectangle 75.png" alt="">
+                    <div class="py-2 px-4 self-center">
+                        <h3 class="text-[#121212] lg:btext-xl font-bold">
+                            The world's strongest human battle
+                        </h3>
+                        <p class="text-[#f4694c] py-2 font-semibold">
+                            Action, Sport
+                        </p>
+                        <p class="text-[#9e9e9e] lg:w-[75%] text-sm">
+                            This is a game about the battle of the strongest humans on earth
+                        </p>
+                        <button class="mt-6 bg-[#f4694c] w-[40%] h-10 text-sm text-white font-semibold tracking-wide shadow-md shadow-slate-500">
+                            Download
+                        </button>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="flex sm:flex-row flex-col bg-[#fdf5ee] lg:bg-transparent shadow-md shadow-gray-500 sm:shadow-slate-700 lg:shadow lg:hover:bg-[#fdf5ee] lg:hover:shadow:md lg:hover:shadow-slate-500 ease-in duration-700 cursor-pointer ">
+                    <img class="w-full h-[30vh] sm:h-auto sm:w-[40%] lg:w-[45%]" src="./images/Rectangle 76.png" alt="">
+                    <div class="py-2 px-4  self-center">
+                        <h3 class="text-[#121212] lg:btext-lg font-bold lg:w-[80%]">
+                            Adventure in snake cave danger
+                        </h3>
+                        <p class="text-[#f4694c] py-2 font-semibold">
+                            Adventure, Actions
+                        </p>
+                        <p class="text-[#9e9e9e] lg:w-[75%] text-sm">
+                            Adventure in a dangerous snake cave with friends who were going on vaction
+                        </p>
+                        <button class="mt-6 bg-[#f4694c] w-[40%] h-10 text-sm text-white font-semibold tracking-wide shadow-md shadow-slate-500">
+                            Download
+                        </button>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="flex sm:flex-row flex-col bg-[#fdf5ee] lg:bg-transparent shadow-md shadow-gray-500 sm:shadow-slate-700 lg:shadow lg:hover:bg-[#fdf5ee] lg:hover:shadow:md lg:hover:shadow-slate-500 ease-in duration-700 cursor-pointer ">
+                    <img class="w-full h-[30vh] sm:h-auto sm:w-[40%] lg:w-[45%]" src="./images/Rectangle 77.png" alt="">
+                    <div class="py-2 px-4 self-center">
+                        <h3 class="text-[#121212] lg:btext-lg font-bold lg:w-[80%]">
+                            Super hero wearing spider mask
+                        </h3>
+                        <p class="text-[#f4694c] py-2 font-semibold">
+                            Strategy, Actions
+                        </p>
+                        <p class="text-[#9e9e9e] lg:w-[75%] text-sm">
+                            A superhero wearing a spider mask who helps many people in the world
+                        </p>
+                        <button class="mt-6 bg-[#f4694c] w-[40%] h-10 text-sm text-white font-semibold tracking-wide shadow-md shadow-slate-500">
+                            Download
+                        </button>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="flex sm:flex-row flex-col bg-[#fdf5ee] lg:bg-transparent shadow-md shadow-gray-500 sm:shadow-slate-700 lg:shadow lg:hover:bg-[#fdf5ee] lg:hover:shadow:md lg:hover:shadow-slate-500 ease-in duration-700 cursor-pointer ">
+                    <img class="w-full h-[30vh] sm:h-auto sm:w-[40%] lg:w-[45%]" src="./images/Rectangle 78.png" alt="">
+                    <div class="py-2 px-4 self-center">
+                        <h3 class="text-[#121212] lg:btext-lg font-bold lg:w-[80%]">
+                            Masked hero with a million powers
+                        </h3>
+                        <p class="text-[#f4694c] py-2 font-semibold">
+                            Adventure
+                        </p>
+                        <p class="text-[#9e9e9e] lg:w-[75%] text-sm">
+                            Omongken is the best podcast that you is the best podcast that you can use
+                        </p>
+                        <button class="mt-6 bg-[#f4694c] w-[40%] h-10 text-sm text-white font-semibold tracking-wide shadow-md shadow-slate-500">
+                            Download
                         </button>
                     </div>
                 </div>
