@@ -16,18 +16,18 @@
 </head>
 <body class="bg-[#0f0f10] font-[Poppins] max-w-7xl m-0 p-0">
     <header class="lg:h-fit">
-        <nav class="fixed top-0 w-full px-4 sm:px-10 lg:px-20 py-2 sm:py-4 sm:flex sm:justify-between bg-[#1e1e21] sm:bg-[#0f0f10] shadow-sm lg:shadow-none shadow-black z-[50]">
+        <nav class="sticky top-0 w-full px-4 sm:px-10 lg:px-20 py-2 sm:py-4 sm:flex sm:justify-between bg-[#1e1e21] sm:bg-[#0f0f10] shadow-sm lg:shadow-none shadow-black z-50">
             <!-- logo (left part) -->
             <div class="flex justify-between items-center sm:pl-10 lg:pl-20">
                 <a href="index.html">
-                    <img class="sm:w-12" src="./images/beatsLogo.png" alt="beatsLogo">
+                    <img class="sm:w-12 lg:w-6" src="./images/beatsLogo.png" alt="beatsLogo">
                 </a>
                 <span>
                     <ion-icon name="menu" onclick="toggleMenu(this)" class="text-gray-100 text-2xl sm:hidden cursor-pointer"></ion-icon>
                 </span>
             </div>
             <!-- NavLinks (right part) -->
-            <div class="nav-links duration-1000 sm:static absolute left-[200%] bg-[#1e1e21] sm:bg-transparent sm:w-auto w-full flex items-center px-5">
+            <div class="nav-links duration-1000 sm:static absolute opacity-0 sm:opacity-100 bg-[#1e1e21] sm:bg-transparent sm:w-auto w-full flex items-center px-5 left-0">
                 <ul class="flex sm:flex-row flex-col lg:pr-10 gap-y-8 lg:gap-y-0 sm:gap-x-8 lg:gap-x-10 sm:items-center py-8 sm:py-4 lg:py-0">
                     <!-- List -->
                     <li class="text-[#f6f6f6] lg:text-xs font-semibold sm:font-light lg:font-semibold hover:text-gray-500 ease-in duration-300">
@@ -54,14 +54,40 @@
     </header>
 
     <!-- main  -->
-    
+    <main class="px-10 sm:px-[15%] lg:px-[20%]">
+        <!-- Section one : Hero  -->
+        <section class="flex flex-col sm:flex-row sm:justify-between py-10 sm:py-20 lg:py-0">
+            <!-- left -->
+            <div class="sm:w-[47%] lg:w-[35%] pl-6">
+                <img class="opacity-30 absolute sm:static lg:absolute lg:top-[-12%] -z-50 sm:z-auto lg:z-50 w-[65%] sm:w-auto lg:w-[20%]" src="./images/mainImage.png" alt="mainImage">
+            </div>
+            <!-- right -->
+            <div class="sm:self-center sm:w-[47%] lg:w-[60%] py-12 sm:py-0 lg:py-10 lg:pl-10 text-center sm:text-start">
+                <img class="lg:w-[75%] lg:mx-auto" src="./images/onEar.png" alt="onEar">
+                <h3 class="text-[#f2f2f3] text-5xl sm:text-3xl lg:text-5xl font-semibold py-6 lg:py-4 ">
+                    Beats 3
+                </h3>
+                <h5 class="text-[#f2f2f3] sm:text-sm py-3 sm:py-6 lg:py-4 ">
+                    Overview
+                </h5>
+                <p class="text-[#808284] sm:text-sm lg:pr-20 pb-8 lg:pb-5 text-justify sm:text-start">
+                    Enjoy award-winning Beats sound with wireless listening freedom and a sleek, streamlined design with comfortable padded earphones, delivering first-rate playback.
+                </p>
+                <button class="flex bg-[#1e1e21] justify-center items-center w-[80%] lg:w-[55%] h-16 lg:h-12 rounded-md shadow-sm shadow-black lg:hover:bg-slate-700 ease-in duration-300 mx-auto sm:mx-0">
+                    <img class="lg:w-3" src="./icons/shoppingBag.png" alt="shoppingBag">
+                    <span class="px-3 text-[#e7e7e7] sm:text-sm lg:text-xs font-light">Add to Bag </span>
+                    <span class="text-[#e7e7e7] text-lg sm:text-base lg:text-sm font-semibold">N399K</span>
+                </button>
+            </div>
+        </section>
+    </main>
 </body>
 
 <script>
     const navLinks = document.querySelector('.nav-links')
     function toggleMenu(e) {
         e.name = e.name === 'menu' ? 'close' : 'menu'
-        navLinks.classList.toggle('left-[0%]')
+        navLinks.classList.toggle('opacity-100')
     }
 </script>
 </html>
