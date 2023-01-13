@@ -1,9 +1,9 @@
 # FullStack-JavaScript-BootCamp-2.0
-### My Journey of how I learned Full Stack Web Development at iNeuron.ai.
 
-
+### My Journey of how I learned Full Stack Web Development at iNeuron.ai
 
 ## **My Assignments:**
+
 **Project 1 -**
 [Link](./Project/FSJS-2.0-Project-01/)
 
@@ -27,6 +27,15 @@
 
 **Project 8 -**
 [Link](./Project/FSJS-2.0-Project-08-HostingSiteLandingPage/)
+
+**Project 9 -**
+[Link](./Project/FSJS-2.0-Project-09-GamingLandingPage/)
+
+**Project 10 -**
+[Link](./Project/FSJS-2.0-Project-10-RealEstateLandingPage/)
+
+**Project 11 -**
+[Link](./Project/FSJS-2.0-Project-11-BeatsLandingPage/)
 
 _**VS Code Clone: Mobile Responsive -**_
 [Link](./Project/VS-CodeClone-using-Tailwind/)
