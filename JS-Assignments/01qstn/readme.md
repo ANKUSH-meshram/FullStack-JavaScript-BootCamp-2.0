@@ -1,4 +1,4 @@
-# Variables
+# Assignment 1
 
 code: [Link](variable.js)
 
