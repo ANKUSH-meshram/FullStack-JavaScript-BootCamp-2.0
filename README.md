@@ -37,5 +37,8 @@
 **Project 11 -**
 [Link](./Project/FSJS-2.0-Project-11-BeatsLandingPage/)
 
+**JS Assignments -**
+[Link](./JS-Assignments/)
+
 _**VS Code Clone: Mobile Responsive -**_
 [Link](./Project/VS-CodeClone-using-Tailwind/)
