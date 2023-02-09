@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 **/assets
 assets/**
 *.png
@@ -9,4 +10,17 @@ icons/**
 **.json
 **/.vscode
 .vscode/**
+=======
+**/assets
+assets/**
+*.png
+*.img
+**/images
+images/**
+**/icons
+icons/**
+**.json
+**/.vscode
+.vscode/**
+>>>>>>> a16821a620f8f841731be0202ea538e9ef695bd6
 **.Ds_Store
