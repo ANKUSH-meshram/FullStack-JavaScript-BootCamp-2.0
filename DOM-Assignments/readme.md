@@ -1,9 +1,9 @@
 # **DOM Assignments:**
 >   Here is the list of my all **DOM Assignments** in which I have created and manipulated web *wonderfull* webpages dynamically using **JavaScript**.  >
 
-***Original Output:***
+***Assignment 1,2,3 -- Original Output :***
 
-![](./output.png)
+![output](https://user-images.githubusercontent.com/118118102/217901856-a1f6b36d-850c-4445-8032-2b99b2b7cf06.png)
 
 
 ## **Assignment One:**
@@ -26,8 +26,9 @@
     allLogos[1].remove();
 ```
 
-![](./firstAssignmentImage/resultImages/Task%201(assignment%201).png)
 
+
+![Task 1(assignment 1)](https://user-images.githubusercontent.com/118118102/217902770-4c65c57a-58e2-4f73-9baa-ecf8d883de43.png)
 ---
 
 **Task 2:**
@@ -40,8 +41,8 @@ liAll[2].innerText = "Projects"
 const btn = document.querySelector("input").placeholder = "Search My Projects"
 ```
 
-![](./firstAssignmentImage/resultImages/Task%202%20(assignment%201).png)
 
+![Task 2 (assignment 1)](https://user-images.githubusercontent.com/118118102/217902151-01f3f08f-42ab-4741-9113-76dfb133fbad.png)
 ---
 
 **Task 3:**
@@ -57,7 +58,8 @@ allSpan[2].innerText = "an Employee"
 allSpan[3].innerText = "iNeuron Intelligence Pvt Ltd"
 ```
 
-![](./firstAssignmentImage/resultImages/Task%203%20(assignment%201).png)
+![Task 3 (assignment 1)](https://user-images.githubusercontent.com/118118102/217902167-3aad25bc-c1cd-4ca9-82a7-af9bfa47df01.png)
+
 
 ---
 
@@ -77,7 +79,8 @@ const allElements = [...element]
 element[4].appendChild(newbtn);
 ```
 
-![](./firstAssignmentImage/resultImages/Task%205%20(assignment%201).png)
+![Task 5 (assignment 1)](https://user-images.githubusercontent.com/118118102/217902198-35254ace-f0b6-4667-b337-884845b8665c.png)
+
 
 ---
 
@@ -94,7 +97,8 @@ allh3.forEach(element => {
 });
 ```
 
-![](./secondAssignmentImage/resultImages/task%201%20(assignment%202).png)
+]![task 1 (assignment 2)](https://user-images.githubusercontent.com/118118102/217902902-4d8c5242-9ad5-48d4-a40a-cffb5562b213.png)
+
 
 ---
 
@@ -130,7 +134,7 @@ const allDivs = [...divs]
 allDivs[2].appendChild(el)
 ```
 
-![](./secondAssignmentImage/resultImages/Task%202%20(Assignment%202).png)
+![Task 2 (Assignment 2)](https://user-images.githubusercontent.com/118118102/217902915-4ae7d1b4-61d4-46f7-a791-084e9e760a4c.png)
 
 ---
 ## **Assignment Three:**
@@ -153,6 +157,6 @@ allTextareas[1].placeholder = "Hello World"
 
 ```
 
-![](./thirdAssignmentImage/resultImages/task%201%20(assignment%203).png)
+![task 1 (assignment 3)](https://user-images.githubusercontent.com/118118102/217903111-e761d9cf-5a71-4d4c-ad27-a4b2a307c613.png)
 
 ---
