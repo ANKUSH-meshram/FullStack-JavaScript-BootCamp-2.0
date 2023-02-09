@@ -1,0 +1,12 @@
+**/assets
+assets/**
+*.png
+*.img
+**/images
+images/**
+**/icons
+icons/**
+**.json
+**/.vscode
+.vscode/**
+**.Ds_Store
