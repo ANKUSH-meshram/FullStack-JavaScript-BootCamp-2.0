@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # **DOM Assignments:**
 >   Here is the list of my all **DOM Assignments** in which I have created and manipulated web *wonderfull* webpages dynamically using **JavaScript**.  >
 
@@ -161,7 +160,6 @@ allTextareas[1].placeholder = "Hello World"
 ![task 1 (assignment 3)](https://user-images.githubusercontent.com/118118102/217903111-e761d9cf-5a71-4d4c-ad27-a4b2a307c613.png)
 
 ---
-=======
 # **DOM Assignments:**
 >   Here is the list of my all **DOM Assignments** in which I have created and manipulated web *wonderfull* webpages dynamically using **JavaScript**.  >
 
@@ -324,4 +322,3 @@ allTextareas[1].placeholder = "Hello World"
 ![task 1 (assignment 3)](https://user-images.githubusercontent.com/118118102/217903111-e761d9cf-5a71-4d4c-ad27-a4b2a307c613.png)
 
 ---
->>>>>>> a16821a620f8f841731be0202ea538e9ef695bd6
