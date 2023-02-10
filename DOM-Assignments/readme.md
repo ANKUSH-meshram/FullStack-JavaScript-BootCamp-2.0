@@ -313,3 +313,54 @@ atagsAll[19].innerText = "aankuushhh"
 ![result](https://user-images.githubusercontent.com/118118102/218101493-7d0663f4-1ae8-4216-ab7c-86628838217d.png)
 
 ---
+
+## **Assignment 6 :**
+
+***original output :***
+
+![original output - 1](https://user-images.githubusercontent.com/118118102/218141201-46e7cfe1-6535-4fb1-8bf1-d07db76c9c4b.png)
+
+![original output - 2](https://user-images.githubusercontent.com/118118102/218141222-330ab424-d453-4898-a308-99327b44954e.png)
+
+
+***code and output result of assignment 6 :***
+
+```
+// logo
+const header = document.querySelector("header")
+let img = document.createElement("img")
+img.src = "https://ineuron.ai/images/ineuron-logo.png"
+header.appendChild(img);
+
+let logo = document.querySelector(".logo")
+logo.remove()
+
+
+// Price
+const span = document.querySelectorAll("span")
+const spanAll = [...span]
+spanAll[0].innerHTML = "$10"
+
+
+// linkedin
+const social = document.querySelector(".footer_social")
+
+const div = document.createElement("div")
+div.classList.add("footer_social_ico")
+
+const linkdIn = document.createElement('img')
+linkdIn.src = "https://cdn-icons-png.flaticon.com/512/61/61109.png?w=360"
+linkdIn.style.width = "22px"
+
+div.append(linkdIn);
+
+social.appendChild(div);
+```
+![result 1](https://user-images.githubusercontent.com/118118102/218141680-d1e44116-557f-480f-95b2-a3f3ecbf2722.png)
+
+
+![result 2](https://user-images.githubusercontent.com/118118102/218141694-1d571204-e5c9-4de6-8819-d28dcba381ff.png)
+
+---
+
+## **Assignment 7 :**
