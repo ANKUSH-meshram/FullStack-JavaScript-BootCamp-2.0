@@ -386,4 +386,31 @@ After dom:
 
 ---
 
-## **Assignment 8 :**
+## **Assignment 9 :**
+
+***original output :***
+
+![original](https://user-images.githubusercontent.com/118118102/218152608-132cf36a-fdb0-4378-9202-cad00dc353cd.png)
+
+## Task 1 :
+
+```
+const h1 = document.querySelector("h1");
+h1.style.color = "#dc163e"
+```
+
+***Result ouput of Task 1 :***
+
+![result 1](https://user-images.githubusercontent.com/118118102/218152990-8f0210a3-b53a-46c9-a1a5-79c391916564.png)
+
+
+## Task 2 :
+
+```
+const cart = document.querySelector(".add-to-cart")
+cart.style.backgroundColor = "#dc163e"
+```
+
+![result 2](https://user-images.githubusercontent.com/118118102/218153254-6c3b3ac2-77a6-4eea-89c5-e25143e76297.png)
+
+---
