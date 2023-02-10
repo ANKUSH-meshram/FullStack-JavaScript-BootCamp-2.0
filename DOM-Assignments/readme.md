@@ -364,3 +364,26 @@ social.appendChild(div);
 ---
 
 ## **Assignment 7 :**
+*original output*
+
+![original output](https://user-images.githubusercontent.com/118118102/218146100-e9006d77-dbae-44e4-88de-b925c80d33d2.png)
+
+
+```
+const courses = document.querySelectorAll("a")
+const allCourses = [...courses]
+
+for (let i = 1; i < allCourses.length; i = i+2) {
+    allCourses[i].remove();
+}
+
+const input = document.querySelector("input")
+input.placeholder = "iNeuron"
+```
+After dom:
+
+![result](https://user-images.githubusercontent.com/118118102/218145557-2079bcf4-f22a-4166-ad4b-c5ac091377ad.png)
+
+---
+
+## **Assignment 8 :**
