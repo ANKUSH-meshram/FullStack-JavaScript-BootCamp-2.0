@@ -241,3 +241,74 @@ for (const iterator of wizardBGC) {
 ![assignment 4](https://user-images.githubusercontent.com/118118102/218047273-bd50edf1-d134-4690-a61d-40410bd6bf24.png)
 
 ---
+
+## **Assignment 5 :**
+
+***original output :***
+![original-output](https://user-images.githubusercontent.com/118118102/218101477-e8bdb578-b3d1-4324-9945-8e1c067a839e.png)
+
+**code :** for change that i made to complete this assignment is below here:
+
+```
+const div = document.querySelectorAll("div")
+const allDivs = [...div]
+const contact = allDivs[3]
+
+// creating new element - Pro Subscription button
+const prosubs = document.createElement("a")
+prosubs.innerText = "Pro Subscription"
+contact.appendChild(prosubs)
+
+prosubs.style.backgroundColor = "#8a2be2"
+prosubs.style.padding = "10px 15px"
+prosubs.style.fontSize = "25px"
+prosubs.style.color = "white"
+prosubs.style.borderRadius = "3px"  
+prosubs.style.cursor = "pointer"
+
+
+// Adding new item in menu recipies
+const recipes = allDivs[7]
+const chinese = document.createElement("a")
+chinese.innerText = "Chinese (7)"
+recipes.appendChild(chinese)
+
+// last
+const recis = document.querySelectorAll(".recipe-name")
+const allRecis = [...recis]
+
+for (const iterator of allRecis) {
+    iterator.style.color = "#551c8c"
+}
+
+const disp = document.querySelectorAll(".recipe-disp")
+const dispAll = [...disp]
+
+for (const iterator of dispAll) {
+    iterator.style.color = "#6531a0"
+}
+
+// extra addtional card
+const gallery = document.querySelector(".recipe-gallery")
+const newCard = document.createElement("div")
+newCard.classList.add("card")
+gallery.appendChild(newCard)
+
+const heading = document.createElement("h5")
+heading.innerText = "add 6th card here"
+newCard.appendChild(heading)
+
+heading.style.padding = "5px"
+heading.style.fontSize = "20px"
+
+// footer
+const atag = document.querySelectorAll("a")
+const atagsAll = [...atag]
+
+atagsAll[19].innerText = "aankuushhh"
+
+```
+
+![result](https://user-images.githubusercontent.com/118118102/218101493-7d0663f4-1ae8-4216-ab7c-86628838217d.png)
+
+---
