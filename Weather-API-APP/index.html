@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Api App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <!-- <img class="bg-Image" src="./images/bg.jpg" alt="bgImage"> -->
+    <nav>
+        <h3>ForeCast</h3>
+        <form onsubmit="getData(event)" class="searchData">
+            <input id="inputBox" type="text" placeholder="Enter the city name">
+            <button class="search-button">
+                <ion-icon name="search-outline"></ion-icon>
+            </button>
+        </form>
+    </nav>
+
+    <main>
+        <section class="cityWeatherData">
+            <!-- city and state -->
+            <div class="region">
+                <p>
+                    <span id="cityName">__</span>, 
+                </p>
+                <p id="stateName">__</p>
+            </div>
+        <!-- country -->
+            <p id="country">__</p>
+            <!-- current temprature in celcius -->
+            <div class="currentWeather">
+                <img width="50px" id="logoImage" src="" alt="icon" />
+                <p>
+                    <span id="temperature">__</span>
+                    &#8451;
+                </p>
+            </div>
+            <!-- Weather status -->
+            <div class="weatherStatus">
+                <p id="weatherStatus">__</p>
+            </div>
+            <!-- weather details -->
+            <div class="weatherDetails">
+                <!-- feels -->
+                <p class="card">Feels like: 
+                    <span id="feelsLike">__</span>
+                    &#8451;
+                </p>
+                <!-- wind speed -->
+                <p class="card">Wind Speed:
+                    <span id="windSpeed">__</span>
+                    km/h
+                </p>
+                <!-- Visibility -->
+                <p class="card">Visibility:
+                    <span id="visibility">__</span>
+                    km
+                </p>
+                <!-- Pressure -->
+                <p class="card">Pressure:
+                    <span id="pressure">__</span>
+                    mb
+                </p>
+                <!-- Himidity -->
+                <p class="card">Humidity:
+                    <span id="humidity">__</span>
+                    &#37;
+                </p>
+                <!-- clouds -->
+                <p class="card">Chance of rain:
+                    <span id="rain">__</span>
+                    &#37;
+                </p>
+                <!-- uv -->
+                <p class="card">UV index:
+                    <span id="uv-index">__</span>
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
