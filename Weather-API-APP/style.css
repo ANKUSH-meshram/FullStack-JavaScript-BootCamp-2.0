@@ -4,7 +4,7 @@
     padding: 0;
     font-family: 'Oleo Script', cursive;
     font-family: 'Open Sans', sans-serif;
-    color: #f5f2eb;
+    color: #ffffff;
 }
 
 body{
@@ -120,7 +120,7 @@ nav form .search-button{
     /* … */
     body{
         background-image: url(./images/bg-portrait.jpg);
-        background-repeat: no-repeat;
+        background-repeat: repeat-y;
         background-size: 100vh;
     }
     nav{
