@@ -1,17 +1,26 @@
 # **TODO APP :**
 
-I have a simple todo app using ReactJS.
-Here you can create your own tasks to do, also you can edit and delete created tasks.
+A TodoList app that allows users to add and remove tasks, edit created tasks. Built with ReactJS.
 
 
-### *Technologies used:*
-```
-ReactJS
-JavaScript
-Html
-CSS
-```
-----
+### **Additional description about the project ad its features :**
+
+* Adding a new item.
+* Removing a selected item.
+* Marking a selected item aas completed.
+
+### ***Built With***
+
+* ReactJS
+* JavaScript
+* Html
+* CSS
+
+### **Live Demo**
+
+[Live Demo Link](https://todolist-app-by-ankush.netlify.app/)
+
+---
 
 ## Site overview:
 
