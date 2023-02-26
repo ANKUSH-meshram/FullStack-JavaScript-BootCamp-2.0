@@ -22,7 +22,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://recipa.netlify.app)
+- [Live Demo Link](la-ricetta-the-ricipe-app-by-ankush.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
