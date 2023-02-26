@@ -22,7 +22,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](la-ricetta-the-ricipe-app-by-ankush.netlify.app)
+- [Live Demo Link](https://la-ricetta-the-ricipe-app-by-ankush.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -40,4 +40,3 @@
 ---
 
 ![png1](https://user-images.githubusercontent.com/118118102/221403794-4dcbc217-17dc-47dc-838d-c37d55494343.png)
-
