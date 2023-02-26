@@ -1,0 +1,298 @@
+body{
+    background-color: #fcde67;
+    font-family: 'Oleo Script', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    margin:25px auto 14.5%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 2rem;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    border-radius: 0.5rem;
+    background-color: #bf9a0560;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: 4px 2px 2px 1px rgb(0, 0, 0);
+    transition: 0.1s;
+    transform: translateY(-8px);
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem 0.5rem;
+}
+.card .mealname{
+    height: 100%;
+    display: flex;
+    position: relative;
+    bottom: 100%;
+    background-color: transparent;
+    align-items: center;
+}
+.card h3{
+    width: 100%;
+    /* height: 100%; */
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Oleo Script;   
+    padding: 0% 10px;
+    background-color: #65646483;
+    position: relative;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    margin: 25px auto;
+}
+.content .left{
+    width: 75%;
+    margin-top: 20px;
+}
+.content .recipe-details{
+    width: 23%;
+}
+.content .left .inner-content{
+    background-color: #c5bdbd;
+    width: 80%;
+    margin: auto;
+    border-radius: 2px;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.189);
+}
+.inner-content img{
+    width: 100%;
+    height: 380px;
+    background-color: #c5bdbd;
+    padding: 6px 6px 0 6px;
+    border-radius: 12px 12px 0 0;
+}
+.inner-content h1{
+    background: #c5bdbd;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: Oleo Script;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.inner-content h3{
+    background-color: #c5bdbd;
+    color: #4b4c4c;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: medium;
+    padding-bottom: 4px;
+    font-size: 17px;
+}
+.inner-content h3 span {
+    background-color: transparent;
+    color: #212121;
+    font-style: italic;
+    padding-right: 4px;
+    font-size: 13px;
+}
+.recipe-details{
+    align-self: center;
+    justify-self: start;
+}
+.ingredients h3{
+    font-family: Oleo Script;
+    font-size: 55px;
+    color: #685405;
+}
+.ingredients li{
+    list-style: disc;
+    padding: 3px 0;
+    color: #918f8ace;
+    font-family: Poppins;
+    font-size: 17px;
+    word-spacing: 1px;
+}
+.down{
+    display: flex;
+    margin: 3% 8%;
+    justify-content: space-between;
+}
+.instructions{
+    width: 35%;
+}
+.instructions h3{
+    font-family: Oleo Script;
+    font-size: 55px;
+    color: #705a04;
+    text-align: center;
+    background-color: #43414158;
+    border-radius: 0px 25px 0 0;
+}
+.instructions h5{
+    font-family: Poppins;
+    font-size: 13px;
+    background-color: #43414158;
+    text-align: justify;
+    padding: 0 20px 20px;
+    color: #878787;
+    word-spacing: 3px;
+    border-radius: 0 0 10px 10px;
+    height: 350px;
+    overflow: auto;
+    
+}
+::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;
+}
+/* Handle */
+.instructions ::-webkit-scrollbar-thumb {
+    background: rgba(200, 201, 200, 0.495); 
+}
+
+.video{
+    width: 60%;
+    padding: 30px;
+    align-self: center;
+}
+
+.indexContainer{
+    display: flex;
+    margin: 2.5rem 0;
+}
+.numBox {
+    width: 50px;
+    height: 40px;
+    background-color: #030e12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 5px 0 5px;
+}
+
+@media screen and (max-width : 480px ) {
+    .heading h1 {
+        margin:30px 0;
+    }
+    .container{
+        margin: 10% auto 30%;
+        width: 100%;
+        grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+        grid-gap: 1.5rem;
+
+    }
+
+    .card{
+        height: 190px;
+        border-radius: 0.2rem;
+        background-color: #bf9a0560;
+        padding: 2px;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    
+    .card:hover{
+        transform: translateY(0px);
+    }
+    .card img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0.2rem 0.2rem;
+    }
+    .card h3{
+        border-radius: 0.2rem 0.2rem;
+        height: 100%;
+        color:rgb(182, 182, 182);
+        font-size: 15px;
+        font-weight: 500;  
+        padding: 50% 3px;
+        background-color: #000000b0;
+        letter-spacing: 1px;
+    }
+    /* Details */
+    .content{
+        display: block;
+        width: 100%;
+    }
+    .content .left{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .content .recipe-details{
+        width: 100%;
+    }
+    .content .left .inner-content{
+        width: 90%;
+    }
+    .inner-content img{
+        width: 100%;
+        height: 350px;
+
+    }
+    .inner-content h1{
+        font-size: 30px;
+        padding: 0 10px;
+    }
+    .ingredients h3{
+        font-size: 60px;
+        text-align: center;
+        padding: 14px 0;
+    }
+    .ingredients li{
+        text-align: justify;
+        padding: 5px 50px;
+        font-size: 15px;
+    }
+    .down{
+        display: block;
+        margin: 10% 5%;
+    }
+    .instructions{
+        width: 100%;
+    }
+    .instructions h3{
+        border-radius: 0px 50px 0 0;
+    }
+    .instructions h5{
+        font-family: Poppins;
+        font-size: 17px;
+        padding:  20px;
+        height: 450px;
+        overflow: auto;
+    }
+    /* Handle */
+    .instructions ::-webkit-scrollbar-thumb {
+        background: rgba(117, 95, 4, 0.495); 
+    }
+    
+    .video{
+        width: 100%;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+    .video iframe{
+        height: 200px;
+        border: #a190904b 2px solid;
+        border-radius: 4px;
+    }
+    
+    .footer{
+        /* position: fixed; */
+        bottom: 0;
+        background-color: #3a38380e;
+    }
+}
