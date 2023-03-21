@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oleo Script', cursive;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: #1c1c1c;
+}
+
+.rock {
+  background-color: rgb(148, 81, 81);
+}
+.ground {
+  background-color: rgba(169, 134, 73, 0.71);
+}
+.fighting {
+  background-color: rgba(169, 73, 73, 0.71);
+}
+.psychic {
+  background-color: rgba(73, 150, 169, 0.71);
+}
+.ghost {
+  background-color: rgb(247, 247, 247);
+}
+.electric {
+  background-color: rgb(255, 255, 161);
+}
+.bug {
+  background-color: #F6D6A7;
+}
+.poison {
+  background-color: #e0a7f6;
+}
+.normal {
+  background-color: #F4F4F4;
+}
+.fairy {
+  background-color: rgba(255, 192, 203, 0.863);
+}
+.fire {
+  background-color: #FBE3DF;
+}
+.grass {
+  background-color:#E2F9E1;
+}
+.water {
+  background-color:#E0F1FD;
+}
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem 5rem;
+}
+
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.all-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0 ;
+  margin: 0.3rem;
+  border: 1px solid #efefef;
+  border-radius: 0.2rem;
+  min-width: 165px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+#card-container .number {
+  border-radius: 1rem;
+  padding: 0.2rem 0.4rem;
+  background-color: rgba(255,255,255,0.3);
+  margin-bottom: 5px;
+}
+
+#card-container img {
+  width: 120px;
+  height: 120px;
+}
+
+.detail-wrapper h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  font-size: medium;
+  font-weight: 600;
+  font-family: Oleo Script;
+}
+
+#card-container small {
+  text-transform: capitalize;
+}
+
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.load-more {
+  background:  linear-gradient(to right, #aa61b1,#2e3ece);
+  border-radius: 2px;
+  color: #444;
+  padding: 0.5rem 1.5rem;
+  min-width: 10%;
+  margin-top: 1rem;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.load-more:hover {
+  background: linear-gradient(to left, #aa61b1,#2e3ece);
+  transition: 0.5s ease-in;
+}
