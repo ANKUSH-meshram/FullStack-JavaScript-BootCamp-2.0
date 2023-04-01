@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { discoverMoviesApi, imgURL } from "../api/Api";
+import { ApiKey, baseURL, discoverMoviesApi, imgURL } from "../api/Api";
 import Card from "../card/Card";
 import Pagination from "../pagination/CustomPagination";
 import { TailSpin } from "react-loader-spinner";
@@ -20,7 +20,8 @@ const Movies = () => {
   const fetchDiscover = async () => {
     setLoading(true);
     try {
-      const { data } = await axios.get(`${discoverMoviesApi}&page=${page}&with_genres=${genreforURL}`);
+      // const { data } = await axios.get(`${baseURL}discover/movie/${ApiKey}&page=${page}&with_genres=${genreforURL}`);
+      const { data } = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=e295eed65e79351299973af64e4b6832&page=${page}&with_genres=${genreforURL}`);
       setDiscover(data.results);
       setNumOfPages(data.total_pages);
       // console.log(data)
