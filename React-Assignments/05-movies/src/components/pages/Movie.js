@@ -35,7 +35,7 @@ const Movies = () => {
   }, [genreforURL,page]);
 
   return (
-    <div className="md:pl-[15rem]  flex flex-col justify-center items-center w-full md:mt-12 px-4 md:px-10">
+    <div className="md:pl-[18rem]  flex flex-col justify-center items-center w-full md:mt-12 px-4 md:px-10">
       <h3 className="text-gray-100 text-center text-5xl font-thin mb-4 md:mb-10 mt-5">
         DISCOVER MOVIES
       </h3>

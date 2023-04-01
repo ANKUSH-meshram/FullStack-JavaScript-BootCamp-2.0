@@ -31,7 +31,7 @@ const Home = () => {
   }, [page]);
 
   return (
-    <div className="md:pl-[15rem] flex flex-col justify-center items-center w-full mt-4 px-4 md:px-10">
+    <div className="md:pl-[18rem] flex flex-col justify-center items-center w-full mt-4 px-4 md:px-10">
       <h3 className="text-gray-100 text-center text-5xl font-thin mb-10 mt-5 ">
         Trending Today
       </h3>

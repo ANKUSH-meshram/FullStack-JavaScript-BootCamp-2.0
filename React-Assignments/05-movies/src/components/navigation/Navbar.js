@@ -40,7 +40,7 @@ function Navbar() {
       <nav
         className={`${
           activemobile ? "block" : "hidden"
-        } fixed top-0 bg-black/90 md:bg-black h-full w-full md:w-[13rem] z-40 md:block`}
+        } fixed top-0 bg-black/90 md:bg-black h-full w-full md:w-[15rem] z-40 md:block`}
       >
         <motion.div
           animate={{ scale: 1 }}

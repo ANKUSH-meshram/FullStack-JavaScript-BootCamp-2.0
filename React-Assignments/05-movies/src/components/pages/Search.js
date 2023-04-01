@@ -46,7 +46,7 @@ const Search = () => {
   }, [type, page]);
 
   return (
-    <div className="md:pl-[15rem] mt-4 px-4 md:px-10 flex flex-col justify-center items-center w-full">
+    <div className="md:pl-[18rem] mt-4 px-4 md:px-10 flex flex-col justify-center items-center w-full">
       <div className="self-start w-full flex justify-between gap-x-2 md:gap-x-5 mb-4">
         {/* <TextField
           placeholder="Search Movies or Series"
